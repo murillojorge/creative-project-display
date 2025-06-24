@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,10 +35,11 @@ const Navbar = () => {
           <a href="#projects" className="nav-link">Projects</a>
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>
+          <ThemeToggle />
         </nav>
         
-        <div className="md:hidden">
-          {/* Mobile menu button would go here */}
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggle />
           <button className="p-2">
             <span className="sr-only">Open menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu">

@@ -1,11 +1,16 @@
 
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 pb-16 md:pt-24 md:pb-24">
       <div className="container-width">
         <div className="max-w-3xl mx-auto text-center space-y-8">
+          <div className="absolute top-8 right-8">
+            <ThemeToggle />
+          </div>
+          
           <div className="space-y-2 animate-slide-down">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full">
               Product Designer

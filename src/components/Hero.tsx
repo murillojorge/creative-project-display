@@ -4,15 +4,11 @@ const Hero = () => {
       <div className="container-width">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-2 animate-slide-down">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full">
-              Product Designer
-            </span>
-            <h1 className="mt-4 font-medium leading-tight tracking-tighter">Turning ideas into intuitive 
-digital realities</h1>
+            <h1 className="mt-4 font-medium leading-tight tracking-tighter">Product Designer & Technologist</h1>
           </div>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
-            I'm a product designer focused on creating intuitive and beautiful digital products that solve real problems for users.
+            I bridge the gap between user needs and technical possibilities, creating digital experiences through human-centered design, strategic thinking, and collaborative development.
           </p>
           
           <div className="pt-4 animate-fade-in [animation-delay:400ms]">

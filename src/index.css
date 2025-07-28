@@ -169,4 +169,9 @@
     animation: gradient-shift 20s ease infinite;
     background-size: 400% 400%;
   }
+  
+  .bg-gradient-mesh-with-noise {
+    background: var(--gradient-mesh), url('/src/assets/noise-texture.png');
+    background-blend-mode: overlay;
+  }
 }

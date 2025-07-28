@@ -161,7 +161,11 @@
   }
   
   .bg-gradient-mesh {
-    background: var(--gradient-mesh);
+    background: 
+      url('/src/assets/grain-texture.png'),
+      var(--gradient-mesh);
+    background-blend-mode: overlay;
+    background-size: 200px 200px, auto;
   }
   
   .bg-gradient-animated {

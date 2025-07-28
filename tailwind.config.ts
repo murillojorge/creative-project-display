@@ -24,8 +24,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'heading': ['Merriweather', 'serif'],
-				'body': ['Open Sans', 'sans-serif'],
+				'heading': ['Abril Fatface', 'serif'],
+				'body': ['Lato', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

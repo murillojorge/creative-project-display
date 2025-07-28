@@ -24,8 +24,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'heading': ['Playfair Display', 'serif'],
-				'body': ['Source Sans Pro', 'sans-serif'],
+				'heading': ['JetBrains Mono', 'monospace'],
+				'body': ['IBM Plex Sans', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

@@ -24,8 +24,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'heading': ['JetBrains Mono', 'monospace'],
-				'body': ['IBM Plex Sans', 'sans-serif'],
+				'heading': ['Merriweather', 'serif'],
+				'body': ['Open Sans', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

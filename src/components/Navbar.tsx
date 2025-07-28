@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container-width flex items-center justify-between">
         <a href="#" className="text-xl font-medium tracking-tight">
           <span className="sr-only">Designer Portfolio</span>
-          <span className="text-primary">Portfolio.</span>
+          <span className="text-primary">J.Murillo</span>
         </a>
         
         <nav className="hidden md:flex items-center space-x-8">

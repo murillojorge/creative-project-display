@@ -1,6 +1,7 @@
 
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import smartHomeImage from '@/assets/smart-home-controller.webp';
 
 // Sample project data
 const projects = [
@@ -30,7 +31,7 @@ const projects = [
     title: "Smart Home Controller",
     description: "An intuitive interface for controlling connected home devices with voice and touch interactions.",
     category: "IoT Design",
-    imageUrl: "https://images.unsplash.com/photo-1558002038-10058c1a0a8e?q=80&w=2069&auto=format&fit=crop"
+    imageUrl: smartHomeImage
   },
   {
     id: 5,

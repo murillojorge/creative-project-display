@@ -24,8 +24,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'heading': ['Abril Fatface', 'serif'],
-				'body': ['Lato', 'sans-serif'],
+				'heading': ['Poppins', 'sans-serif'],
+				'body': ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

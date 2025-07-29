@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="container-width">
         <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full mb-4">
-            Get in Touch
+            Contact
           </span>
           <h2 className="mb-4">Let's work together</h2>
           <p className="text-muted-foreground mb-8">
@@ -19,7 +19,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-medium mb-2">Phone</h3>
-              <p className="text-muted-foreground text-sm">(506) 7013-7123</p>
+              <a href="tel:+50670137123" className="hover:text-foreground transition-colors">(506) 7013-7123</a>
             </div>
             
             <div className="p-6 rounded-lg border border-border bg-card hover:shadow-sm transition-shadow">
@@ -30,7 +30,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-medium mb-2">Email</h3>
-              <p className="text-muted-foreground text-sm">jorge@jmurillo.me</p>
+              <a href="mailto:jorge@jmurillo.me" className="hover:text-foreground transition-colors">jorge@jmurillo.me</a>
             </div>
             
             <div className="p-6 rounded-lg border border-border bg-card hover:shadow-sm transition-shadow">
@@ -43,8 +43,8 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-medium mb-2">Social</h3>
               <div className="flex justify-center space-x-4 text-muted-foreground">
-                <a href="#" className="hover:text-foreground transition-colors">LinkedIn</a>
-                <a href="#" className="hover:text-foreground transition-colors">Behance</a>
+                <a href="https://www.linkedin.com/in/jmurilloux/" target="_blank" className="hover:text-foreground transition-colors">LinkedIn</a>
+                <a href="https://www.behance.net/murillojorge" target="_blank" className="hover:text-foreground transition-colors">Behance</a>
               </div>
             </div>
           </div>

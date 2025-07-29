@@ -12,7 +12,7 @@ const Hero = () => {
           
           <div className="pt-4 animate-fade-in [animation-delay:400ms]">
             <a href="#projects" className="inline-flex items-center px-6 py-3 rounded-full bg-primary text-primary-foreground transition-all hover:bg-primary/90">
-              View Projects
+              Check out my projects
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
                 <path d="m9 18 6-6-6-6" />
               </svg>

@@ -4,13 +4,11 @@ const Hero = () => {
       <div className="container-width">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-2 animate-slide-down">
-            <h1 className="mt-4 font-medium leading-tight tracking-tighter">Designer / Technologist
+            <h1 className="mt-4 font-medium leading-tight tracking-tighter px-[16px]">Designer / Technologist
 / Doer</h1>
           </div>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
-            I bridge the gap between user needs and technical possibilities, creating digital experiences through human-centered design, strategic thinking, and collaborative development.
-          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">Helping build the Internet since 1998.</p>
           
           <div className="pt-4 animate-fade-in [animation-delay:400ms]">
             <a href="#projects" className="inline-flex items-center px-6 py-3 rounded-full bg-primary text-primary-foreground transition-all hover:bg-primary/90">

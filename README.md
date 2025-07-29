@@ -1,6 +1,6 @@
 # My Portfolio
 
-A minimal, responsive portfolio website showcasing product design projects and technical expertise.
+A minimal, AI generated, responsive portfolio website showcasing product design projects and technical expertise.
 
 ## About
 

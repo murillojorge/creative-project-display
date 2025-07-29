@@ -51,7 +51,3 @@ npm run dev
 - Fast loading with Vite's optimized build process
 - Type-safe development with TypeScript
 - Clean, maintainable code structure
-
----
-
-*Designed and developed by J.Murillo*

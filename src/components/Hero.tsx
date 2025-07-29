@@ -4,7 +4,8 @@ const Hero = () => {
       <div className="container-width">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-2 animate-slide-down">
-            <h1 className="mt-4 font-medium leading-tight tracking-tighter">Product Designer & Technologist</h1>
+            <h1 className="mt-4 font-medium leading-tight tracking-tighter">Designer / Technologist
+/ Doer</h1>
           </div>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">

@@ -1,7 +1,5 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import smartHomeImage from '@/assets/smart-home-controller.webp';
-import aicCardImage from '@/assets/aic-card.jpg';
 
 
 // Sample project data
@@ -11,42 +9,42 @@ const projects = [{
   title: "Chatbot with Adaptive Cards",
   description: "A POC on how to present data on chatbots with the help of adaptive cards.",
   category: "AI Experiment",
-  imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+  imageUrl: "/images/projects/chatbot-adaptive-cards/hero.jpg"
 }, {
   id: 2,
   slug: "ai-cloud-research-redesign",
   title: "AI Cloud Research and Redesign",
   description: "User research and redesign aimed to improve the user experience and expand the platform's capabilities.",
   category: "UI/UX Design",
-  imageUrl: aicCardImage
+  imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg"
 }, {
   id: 3,
   slug: "intercompany-transactions",
   title: "Intercompany Transactions Made Easy",
   description: "A minimalist e-commerce application designed for an emerging fashion brand.",
   category: "UI/UX Design",
-  imageUrl: "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=2070&auto=format&fit=crop"
+  imageUrl: "/images/projects/intercompany-transactions/hero.jpg"
 }, {
   id: 4,
   slug: "polco-accessibility-audit",
   title: "Polco.us Accessibility Audit",
   description: "Quick review of the accessibility audit consultation for a US-based research platform.",
   category: "Accessibility",
-  imageUrl: smartHomeImage
+  imageUrl: "/images/projects/polco-accessibility-audit/hero.jpg"
 }, {
   id: 5,
   slug: "digital-goods-for-good",
   title: "Digital Goods for Good",
   description: "A comprehensive travel planning platform that simplifies trip organization and discovery.",
   category: "Hackathon",
-  imageUrl: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
+  imageUrl: "/images/projects/digital-goods-for-good/hero.jpg"
 }, {
   id: 6,
   slug: "crypto-integrations",
   title: "Untangling Crypto Integrations",
   description: "Simplifying user flows for a crypto payments project.",
   category: "User Flows",
-  imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
+  imageUrl: "/images/projects/crypto-integrations/hero.jpg"
 }];
 const ProjectGrid = () => {
   return <section id="projects" className="section">

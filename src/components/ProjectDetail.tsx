@@ -6,8 +6,6 @@ import { Badge } from '@/components/ui/badge';
 import Contact from './Contact';
 
 // Import project data (in a real app, this would come from an API or context)
-import smartHomeImage from '@/assets/smart-home-controller.webp';
-import aicCardImage from '@/assets/aic-card.jpg';
 
 const projects = [{
   id: 1,
@@ -15,15 +13,15 @@ const projects = [{
   title: "Chatbot with Adaptive Cards",
   description: "A POC on how to present data on chatbots with the help of adaptive cards.",
   category: "AI Experiment",
-  imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+  imageUrl: "/images/projects/chatbot-adaptive-cards/hero.jpg",
   challenge: "Traditional chatbot interfaces struggled to present complex data in an engaging and digestible format for users.",
   solution: "Developed a proof of concept using Microsoft's Adaptive Cards framework to create rich, interactive data presentations within chat interfaces.",
   process: "Researched adaptive card specifications, prototyped various data presentation formats, and tested user engagement with different card layouts.",
   results: "Improved user engagement by 65% and reduced information processing time by 40% compared to traditional text-based responses.",
   technologies: ["Microsoft Bot Framework", "Adaptive Cards", "Azure Bot Service", "JavaScript"],
   gallery: [
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop"
+    "/images/projects/chatbot-adaptive-cards/gallery-1.jpg",
+    "/images/projects/chatbot-adaptive-cards/gallery-2.jpg"
   ]
 }, {
   id: 2,
@@ -31,15 +29,15 @@ const projects = [{
   title: "AI Cloud Research and Redesign",
   description: "User research and redesign aimed to improve the user experience and expand the platform's capabilities.",
   category: "UI/UX Design",
-  imageUrl: aicCardImage,
+  imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg",
   challenge: "The existing AI cloud platform had complex navigation, poor information architecture, and users struggled to discover and utilize advanced features.",
   solution: "Conducted comprehensive user research and redesigned the platform with improved navigation, clearer feature discovery, and streamlined workflows.",
   process: "User interviews, competitive analysis, card sorting, wireframing, prototyping, and iterative usability testing with target users.",
   results: "Increased feature adoption by 80%, reduced task completion time by 50%, and achieved 92% user satisfaction in post-launch surveys.",
   technologies: ["Figma", "Miro", "UserTesting", "Hotjar", "Adobe Creative Suite"],
   gallery: [
-    aicCardImage,
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+    "/images/projects/ai-cloud-research-redesign/gallery-1.jpg",
+    "/images/projects/ai-cloud-research-redesign/gallery-2.jpg"
   ]
 }, {
   id: 3,
@@ -47,15 +45,15 @@ const projects = [{
   title: "Intercompany Transactions Made Easy",
   description: "A minimalist e-commerce application designed for an emerging fashion brand.",
   category: "UI/UX Design",
-  imageUrl: "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=2070&auto=format&fit=crop",
+  imageUrl: "/images/projects/intercompany-transactions/hero.jpg",
   challenge: "Complex intercompany financial transactions were causing delays and errors in the fashion brand's supply chain management.",
   solution: "Designed a streamlined, minimalist interface that simplifies transaction flows and reduces cognitive load for users managing multiple company relationships.",
   process: "Stakeholder interviews, process mapping, user journey analysis, wireframing, and prototype testing with finance teams.",
   results: "Reduced transaction processing time by 70% and decreased error rates by 85%, leading to improved supplier relationships.",
   technologies: ["Sketch", "InVision", "Principle", "Zeplin"],
   gallery: [
-    "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop"
+    "/images/projects/intercompany-transactions/gallery-1.jpg",
+    "/images/projects/intercompany-transactions/gallery-2.jpg"
   ]
 }, {
   id: 4,
@@ -63,15 +61,15 @@ const projects = [{
   title: "Polco.us Accessibility Audit",
   description: "Quick review of the accessibility audit consultation for a US-based research platform.",
   category: "Accessibility",
-  imageUrl: smartHomeImage,
+  imageUrl: "/images/projects/polco-accessibility-audit/hero.jpg",
   challenge: "The research platform had significant accessibility barriers preventing users with disabilities from participating in civic engagement activities.",
   solution: "Conducted a comprehensive accessibility audit following WCAG 2.1 AA guidelines and provided actionable recommendations for improvement.",
   process: "Automated testing with accessibility tools, manual testing with screen readers, keyboard navigation testing, and color contrast analysis.",
   results: "Identified 47 accessibility issues and provided remediation plan that improved platform accessibility score from 65% to 94%.",
   technologies: ["WAVE", "axe DevTools", "NVDA", "VoiceOver", "Lighthouse"],
   gallery: [
-    smartHomeImage,
-    "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop"
+    "/images/projects/polco-accessibility-audit/gallery-1.jpg",
+    "/images/projects/polco-accessibility-audit/gallery-2.jpg"
   ]
 }, {
   id: 5,
@@ -79,15 +77,15 @@ const projects = [{
   title: "Digital Goods for Good",
   description: "A comprehensive travel planning platform that simplifies trip organization and discovery.",
   category: "Hackathon",
-  imageUrl: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
+  imageUrl: "/images/projects/digital-goods-for-good/hero.jpg",
   challenge: "During a 48-hour hackathon, the challenge was to create a platform that connects travelers with local social impact opportunities.",
   solution: "Developed a travel planning platform that integrates volunteer opportunities and sustainable tourism options into trip itineraries.",
   process: "Rapid ideation, user persona development, MVP wireframing, and prototype development within hackathon time constraints.",
   results: "Won 2nd place in the hackathon and received interest from three travel companies for potential partnership opportunities.",
   technologies: ["React", "Node.js", "MongoDB", "Figma", "Mapbox API"],
   gallery: [
-    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2035&auto=format&fit=crop"
+    "/images/projects/digital-goods-for-good/gallery-1.jpg",
+    "/images/projects/digital-goods-for-good/gallery-2.jpg"
   ]
 }, {
   id: 6,
@@ -95,15 +93,15 @@ const projects = [{
   title: "Untangling Crypto Integrations",
   description: "Simplifying user flows for a crypto payments project.",
   category: "User Flows",
-  imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+  imageUrl: "/images/projects/crypto-integrations/hero.jpg",
   challenge: "Complex cryptocurrency payment flows were causing high user drop-off rates and confusion during the checkout process.",
   solution: "Redesigned user flows to simplify crypto payment integration, reducing steps and providing clear guidance throughout the process.",
   process: "User flow analysis, drop-off point identification, A/B testing of simplified flows, and iterative refinement based on user feedback.",
   results: "Increased conversion rates by 120% and reduced support tickets related to payment confusion by 75%.",
   technologies: ["Figma", "Miro", "Hotjar", "Google Analytics", "Mixpanel"],
   gallery: [
-    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2032&auto=format&fit=crop"
+    "/images/projects/crypto-integrations/gallery-1.jpg",
+    "/images/projects/crypto-integrations/gallery-2.jpg"
   ]
 }];
 

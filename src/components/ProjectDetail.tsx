@@ -19,7 +19,7 @@ const projects = [{
   solution: "Developed a proof of concept using Microsoft's Adaptive Cards framework to create rich, interactive data presentations within chat interfaces.",
   process: "Researched adaptive card specifications, prototyped various data presentation formats, and tested user engagement with different card layouts.",
   results: "Improved user engagement by 65% and reduced information processing time by 40% compared to traditional text-based responses.",
-  technologies: ["Microsoft Bot Framework", "Adaptive Cards", "Azure Bot Service", "JavaScript"],
+  technologies: ["Lovable", "Adaptive Cards", "React", "Tailwind CSS"],
   gallery: [
     "/images/projects/chatbot-adaptive-cards/gallery-1.jpg",
     "/images/projects/chatbot-adaptive-cards/gallery-2.jpg"
@@ -51,7 +51,7 @@ const projects = [{
   solution: "Designed a streamlined, minimalist interface that simplifies transaction flows and reduces cognitive load for users managing multiple company relationships.",
   process: "Stakeholder interviews, process mapping, user journey analysis, wireframing, and prototype testing with finance teams.",
   results: "Reduced transaction processing time by 70% and decreased error rates by 85%, leading to improved supplier relationships.",
-  technologies: ["Sketch", "InVision", "Principle", "Zeplin"],
+  technologies: ["Sketch", "Zeplin", "React", "Blockchain", "EOSIO"],
   gallery: [
     "/images/projects/intercompany-transactions/gallery-1.jpg",
     "/images/projects/intercompany-transactions/gallery-2.jpg"
@@ -67,7 +67,7 @@ const projects = [{
   solution: "Conducted a comprehensive accessibility audit following WCAG 2.1 AA guidelines and provided actionable recommendations for improvement.",
   process: "Automated testing with accessibility tools, manual testing with screen readers, keyboard navigation testing, and color contrast analysis.",
   results: "Identified 47 accessibility issues and provided remediation plan that improved platform accessibility score from 65% to 94%.",
-  technologies: ["WAVE", "axe DevTools", "NVDA", "VoiceOver", "Lighthouse"],
+  technologies: ["Figma", "React", "WAVE"],
   gallery: [
     "/images/projects/polco-accessibility-audit/gallery-1.jpg",
     "/images/projects/polco-accessibility-audit/gallery-2.jpg"
@@ -83,7 +83,7 @@ const projects = [{
   solution: "Developed a travel planning platform that integrates volunteer opportunities and sustainable tourism options into trip itineraries.",
   process: "Rapid ideation, user persona development, MVP wireframing, and prototype development within hackathon time constraints.",
   results: "Won 2nd place in the hackathon and received interest from three travel companies for potential partnership opportunities.",
-  technologies: ["React", "Node.js", "MongoDB", "Figma", "Mapbox API"],
+  technologies: ["Figma", "React", "Blockchain", "NFTs", "EOSIO"],
   gallery: [
     "/images/projects/digital-goods-for-good/gallery-1.jpg",
     "/images/projects/digital-goods-for-good/gallery-2.jpg"
@@ -99,7 +99,7 @@ const projects = [{
   solution: "Redesigned user flows to simplify crypto payment integration, reducing steps and providing clear guidance throughout the process.",
   process: "User flow analysis, drop-off point identification, A/B testing of simplified flows, and iterative refinement based on user feedback.",
   results: "Increased conversion rates by 120% and reduced support tickets related to payment confusion by 75%.",
-  technologies: ["Figma", "Miro", "Hotjar", "Google Analytics", "Mixpanel"],
+  technologies: ["Sketch", "Sidecar", "Blockchain"],
   gallery: [
     "/images/projects/crypto-integrations/gallery-1.jpg",
     "/images/projects/crypto-integrations/gallery-2.jpg"

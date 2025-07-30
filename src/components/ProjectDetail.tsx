@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Contact from './Contact';
+import { GalleryModal } from './GalleryModal';
 
 // Import project data (in a real app, this would come from an API or context)
 
@@ -108,6 +109,8 @@ const projects = [{
 const ProjectDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   
   // Scroll to top when component mounts or slug changes
   useEffect(() => {
@@ -128,6 +131,11 @@ const ProjectDetail = () => {
         projectsSection.scrollIntoView({ behavior: 'smooth' });
       }
     }, 100);
+  };
+
+  const openModal = (imageIndex: number) => {
+    setSelectedImageIndex(imageIndex);
+    setModalOpen(true);
   };
 
   if (!project) {
@@ -245,16 +253,24 @@ const ProjectDetail = () => {
               <h2 className="text-2xl font-medium mb-8 animate-fade-in">Gallery</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {project.gallery.map((image, index) => (
-                  <div 
-                    key={index} 
-                    className={`aspect-[4/3] relative overflow-hidden rounded-xl animate-fade-in [animation-delay:${800 + index * 100}ms]`}
+                  <button
+                    key={index}
+                    onClick={() => openModal(index)}
+                    className={`aspect-[4/3] relative overflow-hidden rounded-xl animate-fade-in [animation-delay:${800 + index * 100}ms] group cursor-pointer`}
                   >
                     <img 
                       src={image} 
                       alt={`${project.title} - Image ${index + 1}`}
-                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
                     />
-                  </div>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                      <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
                 ))}
               </div>
             </div>
@@ -264,6 +280,17 @@ const ProjectDetail = () => {
 
       {/* Contact Section */}
       <Contact />
+
+      {/* Gallery Modal */}
+      {project.gallery && (
+        <GalleryModal
+          images={project.gallery}
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          initialIndex={selectedImageIndex}
+          projectTitle={project.title}
+        />
+      )}
 
       {/* Navigation Footer */}
       <section className="section">

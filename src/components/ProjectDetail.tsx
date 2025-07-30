@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import Contact from './Contact';
 
 // Import project data (in a real app, this would come from an API or context)
 import smartHomeImage from '@/assets/smart-home-controller.webp';
@@ -110,17 +111,33 @@ const ProjectDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   
+  // Scroll to top when component mounts or slug changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+  
   const project = projects.find(p => p.slug === slug);
   const currentIndex = projects.findIndex(p => p.slug === slug);
   const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+
+  const handleBackToPortfolio = () => {
+    navigate('/');
+    // Use setTimeout to ensure navigation completes before scrolling
+    setTimeout(() => {
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   if (!project) {
     return (
       <div className="min-h-screen bg-gradient-mesh flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-medium mb-4">Project Not Found</h1>
-          <Button onClick={() => navigate('/')}>
+          <Button onClick={handleBackToPortfolio}>
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Portfolio
           </Button>
@@ -135,7 +152,7 @@ const ProjectDetail = () => {
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b">
         <div className="container-width py-4">
           <div className="flex items-center justify-between">
-            <Button variant="ghost" onClick={() => navigate('/')} className="gap-2">
+            <Button variant="ghost" onClick={handleBackToPortfolio} className="gap-2">
               <ArrowLeft className="w-4 h-4" />
               Back to Portfolio
             </Button>
@@ -246,6 +263,9 @@ const ProjectDetail = () => {
           </div>
         </section>
       )}
+
+      {/* Contact Section */}
+      <Contact />
 
       {/* Navigation Footer */}
       <section className="section">

@@ -6,102 +6,103 @@ import { Badge } from '@/components/ui/badge';
 
 // Import project data (in a real app, this would come from an API or context)
 import smartHomeImage from '@/assets/smart-home-controller.webp';
+import aicCardImage from '@/assets/aic-card.jpg';
 
 const projects = [{
   id: 1,
-  slug: "financial-app-redesign",
-  title: "Financial App Redesign",
-  description: "A complete redesign of a financial management platform focusing on usability and visual hierarchy.",
-  category: "UX/UI Design",
+  slug: "chatbot-adaptive-cards",
+  title: "Chatbot with Adaptive Cards",
+  description: "A POC on how to present data on chatbots with the help of adaptive cards.",
+  category: "AI Experiment",
   imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-  challenge: "The existing financial platform had poor user experience with complex navigation and overwhelming data presentation.",
-  solution: "Redesigned the entire interface with clear visual hierarchy, simplified navigation, and intuitive data visualization.",
-  process: "Conducted user research, created personas, wireframed solutions, and iteratively tested prototypes.",
-  results: "40% increase in user engagement and 60% reduction in task completion time.",
-  technologies: ["Figma", "Adobe Creative Suite", "Principle"],
+  challenge: "Traditional chatbot interfaces struggled to present complex data in an engaging and digestible format for users.",
+  solution: "Developed a proof of concept using Microsoft's Adaptive Cards framework to create rich, interactive data presentations within chat interfaces.",
+  process: "Researched adaptive card specifications, prototyped various data presentation formats, and tested user engagement with different card layouts.",
+  results: "Improved user engagement by 65% and reduced information processing time by 40% compared to traditional text-based responses.",
+  technologies: ["Microsoft Bot Framework", "Adaptive Cards", "Azure Bot Service", "JavaScript"],
   gallery: [
     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop"
   ]
 }, {
   id: 2,
-  slug: "health-tracking-dashboard",
-  title: "Health Tracking Dashboard",
-  description: "A wellness application dashboard designed to help users visualize and track their health goals.",
-  category: "Product Design",
-  imageUrl: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=2532&auto=format&fit=crop",
-  challenge: "Users struggled to understand their health data and maintain consistent tracking habits.",
-  solution: "Created an intuitive dashboard with clear data visualization and gamification elements to encourage engagement.",
-  process: "User interviews, competitive analysis, iterative design, and usability testing with health professionals.",
-  results: "75% improvement in daily tracking consistency and 90% user satisfaction rate.",
-  technologies: ["React", "D3.js", "Tailwind CSS", "Figma"],
+  slug: "ai-cloud-research-redesign",
+  title: "AI Cloud Research and Redesign",
+  description: "User research and redesign aimed to improve the user experience and expand the platform's capabilities.",
+  category: "UI/UX Design",
+  imageUrl: aicCardImage,
+  challenge: "The existing AI cloud platform had complex navigation, poor information architecture, and users struggled to discover and utilize advanced features.",
+  solution: "Conducted comprehensive user research and redesigned the platform with improved navigation, clearer feature discovery, and streamlined workflows.",
+  process: "User interviews, competitive analysis, card sorting, wireframing, prototyping, and iterative usability testing with target users.",
+  results: "Increased feature adoption by 80%, reduced task completion time by 50%, and achieved 92% user satisfaction in post-launch surveys.",
+  technologies: ["Figma", "Miro", "UserTesting", "Hotjar", "Adobe Creative Suite"],
   gallery: [
-    "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=2532&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2070&auto=format&fit=crop"
+    aicCardImage,
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
   ]
 }, {
   id: 3,
-  slug: "ecommerce-mobile-app",
-  title: "E-commerce Mobile App",
+  slug: "intercompany-transactions",
+  title: "Intercompany Transactions Made Easy",
   description: "A minimalist e-commerce application designed for an emerging fashion brand.",
-  category: "Mobile Design",
+  category: "UI/UX Design",
   imageUrl: "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=2070&auto=format&fit=crop",
-  challenge: "Creating a seamless mobile shopping experience that reflects the brand's minimalist aesthetic.",
-  solution: "Designed a clean, gesture-driven interface with focus on product photography and streamlined checkout.",
-  process: "Brand analysis, mobile-first design approach, prototype development, and A/B testing.",
-  results: "50% increase in mobile conversion rate and 95% positive user feedback on design.",
-  technologies: ["React Native", "Sketch", "InVision", "Zeplin"],
+  challenge: "Complex intercompany financial transactions were causing delays and errors in the fashion brand's supply chain management.",
+  solution: "Designed a streamlined, minimalist interface that simplifies transaction flows and reduces cognitive load for users managing multiple company relationships.",
+  process: "Stakeholder interviews, process mapping, user journey analysis, wireframing, and prototype testing with finance teams.",
+  results: "Reduced transaction processing time by 70% and decreased error rates by 85%, leading to improved supplier relationships.",
+  technologies: ["Sketch", "InVision", "Principle", "Zeplin"],
   gallery: [
     "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop"
   ]
 }, {
   id: 4,
-  slug: "smart-home-controller",
-  title: "Smart Home Controller",
-  description: "An intuitive interface for controlling connected home devices with voice and touch interactions.",
-  category: "IoT Design",
+  slug: "polco-accessibility-audit",
+  title: "Polco.us Accessibility Audit",
+  description: "Quick review of the accessibility audit consultation for a US-based research platform.",
+  category: "Accessibility",
   imageUrl: smartHomeImage,
-  challenge: "Designing a unified interface for diverse IoT devices while maintaining simplicity and accessibility.",
-  solution: "Created a modular dashboard with customizable widgets and multi-modal interaction support.",
-  process: "IoT ecosystem research, accessibility testing, voice UI design, and prototype validation.",
-  results: "85% reduction in setup time and universal accessibility compliance.",
-  technologies: ["Vue.js", "WebRTC", "Node.js", "Figma"],
+  challenge: "The research platform had significant accessibility barriers preventing users with disabilities from participating in civic engagement activities.",
+  solution: "Conducted a comprehensive accessibility audit following WCAG 2.1 AA guidelines and provided actionable recommendations for improvement.",
+  process: "Automated testing with accessibility tools, manual testing with screen readers, keyboard navigation testing, and color contrast analysis.",
+  results: "Identified 47 accessibility issues and provided remediation plan that improved platform accessibility score from 65% to 94%.",
+  technologies: ["WAVE", "axe DevTools", "NVDA", "VoiceOver", "Lighthouse"],
   gallery: [
     smartHomeImage,
-    "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop"
   ]
 }, {
   id: 5,
-  slug: "travel-planning-platform",
-  title: "Travel Planning Platform",
+  slug: "digital-goods-for-good",
+  title: "Digital Goods for Good",
   description: "A comprehensive travel planning platform that simplifies trip organization and discovery.",
-  category: "Web Design",
+  category: "Hackathon",
   imageUrl: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
-  challenge: "Simplifying the complex process of multi-destination trip planning while providing comprehensive information.",
-  solution: "Built an intelligent planning tool with AI-powered recommendations and collaborative features.",
-  process: "Travel behavior research, information architecture design, and extensive user testing.",
-  results: "60% faster trip planning process and 80% user retention rate.",
-  technologies: ["Next.js", "TypeScript", "Mapbox", "PostgreSQL"],
+  challenge: "During a 48-hour hackathon, the challenge was to create a platform that connects travelers with local social impact opportunities.",
+  solution: "Developed a travel planning platform that integrates volunteer opportunities and sustainable tourism options into trip itineraries.",
+  process: "Rapid ideation, user persona development, MVP wireframing, and prototype development within hackathon time constraints.",
+  results: "Won 2nd place in the hackathon and received interest from three travel companies for potential partnership opportunities.",
+  technologies: ["React", "Node.js", "MongoDB", "Figma", "Mapbox API"],
   gallery: [
     "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2070&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2035&auto=format&fit=crop"
   ]
 }, {
   id: 6,
-  slug: "productivity-tool",
-  title: "Productivity Tool",
-  description: "A minimal task management application focused on distraction-free productivity.",
-  category: "UX/UI Design",
+  slug: "crypto-integrations",
+  title: "Untangling Crypto Integrations",
+  description: "Simplifying user flows for a crypto payments project.",
+  category: "User Flows",
   imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-  challenge: "Creating a productivity tool that enhances focus rather than creating additional distractions.",
-  solution: "Designed a minimalist interface with intelligent task prioritization and distraction-blocking features.",
-  process: "Productivity workflow analysis, minimalist design principles, and focus group testing.",
-  results: "70% improvement in task completion rate and 65% reduction in context switching.",
-  technologies: ["React", "Electron", "SQLite", "Framer Motion"],
+  challenge: "Complex cryptocurrency payment flows were causing high user drop-off rates and confusion during the checkout process.",
+  solution: "Redesigned user flows to simplify crypto payment integration, reducing steps and providing clear guidance throughout the process.",
+  process: "User flow analysis, drop-off point identification, A/B testing of simplified flows, and iterative refinement based on user feedback.",
+  results: "Increased conversion rates by 120% and reduced support tickets related to payment confusion by 75%.",
+  technologies: ["Figma", "Miro", "Hotjar", "Google Analytics", "Mixpanel"],
   gallery: [
     "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop"
+    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2032&auto=format&fit=crop"
   ]
 }];
 

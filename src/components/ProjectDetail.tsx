@@ -35,7 +35,7 @@ const projects = [{
   solution: "Conducted comprehensive user research and redesigned the platform with improved navigation, clearer feature discovery, and streamlined workflows.",
   process: "User interviews, competitive analysis, card sorting, wireframing, prototyping, and iterative usability testing with target users.",
   results: "Increased feature adoption by 80%, reduced task completion time by 50%, and achieved 92% user satisfaction in post-launch surveys.",
-  technologies: ["Figma", "Miro", "UserTesting", "Hotjar", "Adobe Creative Suite"],
+  technologies: ["Figma", "React", "Bootstrap", "Adobe Analytics"],
   gallery: [
     "/images/projects/ai-cloud-research-redesign/gallery-1.jpg",
     "/images/projects/ai-cloud-research-redesign/gallery-2.jpg"

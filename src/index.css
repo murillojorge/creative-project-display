@@ -169,4 +169,45 @@
     animation: gradient-shift 20s ease infinite;
     background-size: 400% 400%;
   }
+  
+  /* Prose styling for markdown content */
+  .prose {
+    @apply text-foreground;
+  }
+  
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    @apply text-foreground font-heading;
+  }
+  
+  .prose code {
+    @apply bg-muted text-foreground px-1.5 py-0.5 rounded-md text-sm font-mono;
+  }
+  
+  .prose pre {
+    @apply bg-muted border border-border rounded-lg;
+  }
+  
+  .prose pre code {
+    @apply bg-transparent p-0 text-sm;
+  }
+  
+  .prose blockquote {
+    @apply border-l-primary text-muted-foreground;
+  }
+  
+  .prose ul, .prose ol {
+    @apply text-foreground;
+  }
+  
+  .prose li {
+    @apply text-foreground;
+  }
+  
+  .prose strong {
+    @apply text-foreground font-semibold;
+  }
+  
+  .prose em {
+    @apply text-foreground;
+  }
 }

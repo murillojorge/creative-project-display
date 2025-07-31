@@ -7,16 +7,29 @@ import Contact from './Contact';
 import { GalleryModal } from './GalleryModal';
 import ReactMarkdown from 'react-markdown';
 import { projects } from '@/data/projects';
+import { loadAllProjectContent } from '@/utils/contentLoader';
 
 const ProjectDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [content, setContent] = useState<Record<string, string>>({});
+  const [loading, setLoading] = useState(true);
   
   // Scroll to top when component mounts or slug changes
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [slug]);
+
+  // Load project content
+  useEffect(() => {
+    if (slug) {
+      setLoading(true);
+      loadAllProjectContent(slug)
+        .then(setContent)
+        .finally(() => setLoading(false));
+    }
   }, [slug]);
   
   const project = projects.find(p => p.slug === slug);
@@ -111,33 +124,50 @@ const ProjectDetail = () => {
           <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-12">
             {/* Main Content */}
             <div className="md:col-span-2 space-y-12">
-              <div className="animate-fade-in [animation-delay:300ms]">
-                <h2 className="text-2xl font-medium mb-4">Challenge</h2>
-                <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
-                  <ReactMarkdown>{project.challenge}</ReactMarkdown>
+              {loading ? (
+                <div className="space-y-8">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="animate-pulse">
+                      <div className="h-6 bg-muted rounded w-24 mb-4"></div>
+                      <div className="space-y-2">
+                        <div className="h-4 bg-muted rounded"></div>
+                        <div className="h-4 bg-muted rounded w-5/6"></div>
+                        <div className="h-4 bg-muted rounded w-4/6"></div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
+              ) : (
+                <>
+                  <div className="animate-fade-in [animation-delay:300ms]">
+                    <h2 className="text-2xl font-medium mb-4">Challenge</h2>
+                    <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                      <ReactMarkdown>{content.challenge || 'Content loading...'}</ReactMarkdown>
+                    </div>
+                  </div>
 
-              <div className="animate-fade-in [animation-delay:400ms]">
-                <h2 className="text-2xl font-medium mb-4">Solution</h2>
-                <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
-                  <ReactMarkdown>{project.solution}</ReactMarkdown>
-                </div>
-              </div>
+                  <div className="animate-fade-in [animation-delay:400ms]">
+                    <h2 className="text-2xl font-medium mb-4">Solution</h2>
+                    <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                      <ReactMarkdown>{content.solution || 'Content loading...'}</ReactMarkdown>
+                    </div>
+                  </div>
 
-              <div className="animate-fade-in [animation-delay:500ms]">
-                <h2 className="text-2xl font-medium mb-4">Process</h2>
-                <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
-                  <ReactMarkdown>{project.process}</ReactMarkdown>
-                </div>
-              </div>
+                  <div className="animate-fade-in [animation-delay:500ms]">
+                    <h2 className="text-2xl font-medium mb-4">Process</h2>
+                    <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                      <ReactMarkdown>{content.process || 'Content loading...'}</ReactMarkdown>
+                    </div>
+                  </div>
 
-              <div className="animate-fade-in [animation-delay:600ms]">
-                <h2 className="text-2xl font-medium mb-4">Results</h2>
-                <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
-                  <ReactMarkdown>{project.results}</ReactMarkdown>
-                </div>
-              </div>
+                  <div className="animate-fade-in [animation-delay:600ms]">
+                    <h2 className="text-2xl font-medium mb-4">Results</h2>
+                    <div className="text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                      <ReactMarkdown>{content.results || 'Content loading...'}</ReactMarkdown>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
 
             {/* Sidebar */}

@@ -12,10 +12,6 @@ export interface Project {
   description: string;
   category: string;
   imageUrl: string;
-  challenge: string;
-  solution: string;
-  process: string;
-  results: string;
   technologies: string[];
   gallery: string[];
 }

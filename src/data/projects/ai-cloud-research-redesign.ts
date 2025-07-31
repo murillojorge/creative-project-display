@@ -2,7 +2,7 @@ export const aiCloudResearchRedesignProject = {
   id: "2",
   slug: "ai-cloud-research-redesign",
   title: "AI & Cloud Research Redesign",
-  description: "A complete redesign of a research platform focusing on AI and cloud technologies.",
+  description: "The Intel Tiber AI Cloud is an enterprise-grade platform designed to streamline and accelerate AI workloads for organizations. It provides a comprehensive suite of tools for data scientists, ML engineers, and IT administrators to develop, train, deploy, and manage AI models at scale and securely.\nThis project focused on improving the existing user interface, implementing a cohesive design system, and refining the Tiber branding to enhance overall user experience. The redesign aimed to address usability issues, establish visual consistency, and create a more intuitive workflow for users interacting with complex AI operations.",
   category: "UI/UX Design",
   imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg",
   challenge: "The existing research platform had **poor user experience** and outdated design patterns that hindered researchers productivity.\n### Main Issues ###\n- Complex navigation structure\n- Information overload\n- Poor mobile experience\n- Inconsistent design language",

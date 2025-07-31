@@ -7,7 +7,7 @@ export const aiCloudResearchRedesignProject = {
   imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg",
   challenge: "
     The existing research platform had **poor user experience** and outdated design patterns that hindered researchers productivity.\n
-    ### Main Issues\n
+    ### Main Issues ###\n
     - Complex navigation structure\n
     - Information overload\n
     - Poor mobile experience\n

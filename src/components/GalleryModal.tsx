@@ -37,7 +37,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent 
-        className="max-w-6xl w-full h-[90vh] p-0 border-0 bg-black/95"
+        className="max-w-6xl w-full h-[90vh] p-0 border-0 bg-black/95 [&>button]:hidden"
         onKeyDown={handleKeyDown}
       >
         <div className="relative w-full h-full flex items-center justify-center">

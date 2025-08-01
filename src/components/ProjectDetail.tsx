@@ -124,7 +124,7 @@ const ProjectDetail = () => {
           <div className="container-width">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl font-medium mb-8 animate-fade-in">Gallery</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-3 gap-6">
                 {project.gallery.map((image, index) => (
                   <button
                     key={index}

@@ -4,7 +4,6 @@ import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Contact from './Contact';
-import ContactCompact from './ContactCompact';
 import { GalleryModal } from './GalleryModal';
 import ReactMarkdown from 'react-markdown';
 import { projects } from '@/data/projects';
@@ -214,8 +213,6 @@ const ProjectDetail = () => {
                   ))}
                 </div>
               </div>
-              
-              <ContactCompact />
             </div>
           </div>
         </div>

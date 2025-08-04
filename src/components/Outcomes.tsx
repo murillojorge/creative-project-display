@@ -162,7 +162,7 @@ const MetricCard = ({ outcome, index }: { outcome: string, index: number }) => {
             <div className={`text-3xl font-bold mb-2 ${context.color}`}>
               {metric.displayValue}
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base font-medium text-foreground">
               {metric.shortDesc}
             </p>
           </div>

@@ -115,6 +115,13 @@ const ProjectDetail = () => {
                 className="object-cover w-full h-full"
               />
             </div>
+
+            {/* Key Outcomes */}
+            {!loading && content.outcomes && (
+              <div className="animate-fade-in [animation-delay:300ms]">
+                <Outcomes content={content.outcomes} />
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -215,9 +222,6 @@ const ProjectDetail = () => {
                 </div>
               </div>
               
-              {!loading && content.outcomes && (
-                <Outcomes content={content.outcomes} />
-              )}
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <section id="about" className="section bg-secondary/30">
-      <div className="container-width">
+      <div className="w-full max-w-6xl mx-auto px-8 sm:px-12 lg:px-16">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div className="order-2 md:order-1">
             <div className="aspect-square max-w-md mx-auto md:mx-0 rounded-full overflow-hidden">

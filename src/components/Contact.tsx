@@ -1,7 +1,7 @@
 import React from 'react';
 const Contact = () => {
   return <section id="contact" className="section">
-      <div className="container-width">
+      <div className="w-full max-w-6xl mx-auto px-8 sm:px-12 lg:px-16">
         <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full mb-4">
             Contact

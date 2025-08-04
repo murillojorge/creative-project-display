@@ -1,5 +1,4 @@
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
 
 interface OutcomesProps {
   content: string;
@@ -21,13 +20,13 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
   return (
     <div>
       <h3 className="font-medium mb-4">Key Outcomes</h3>
-      <div className="space-y-2">
+      <ul className="space-y-1">
         {outcomes.map((outcome, index) => (
-          <Badge key={index} variant="secondary" className="w-full justify-start text-xs py-2 px-3">
+          <li key={index} className="text-sm text-muted-foreground">
             {outcome}
-          </Badge>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

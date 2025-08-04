@@ -186,8 +186,8 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
 
   return (
     <div>
-      <div className="mb-6">
-        <h3 className="font-medium mb-2">Key Outcomes</h3>
+      <div className="mb-8">
+        <h2 className="text-2xl font-medium mb-4">Key Outcomes</h2>
         <p className="text-sm text-muted-foreground">
           Measurable impact and results achieved through this project
         </p>

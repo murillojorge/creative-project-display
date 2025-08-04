@@ -131,7 +131,7 @@ const ProjectDetail = () => {
         <section className="section">
           <div className="container-width">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-medium mb-8 animate-fade-in">Gallery</h2>
+              <h2 className="text-2xl font-medium mb-4 animate-fade-in">Gallery</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {project.gallery.map((image, index) => (
                   <button

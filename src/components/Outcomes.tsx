@@ -153,21 +153,17 @@ const MetricCard = ({ outcome, index }: { outcome: string, index: number }) => {
       style={{ animationDelay: `${index * 100}ms` }}
     >
       <CardContent className="p-6">
-        <div className="flex items-start gap-4">
+        <div className="flex items-center gap-4">
           <div className={`p-3 rounded-xl ${context.bgColor} flex-shrink-0`}>
             <Icon size={24} className={context.color} />
           </div>
           
           <div className="flex-1 min-w-0">
-            <div className={`text-3xl font-bold mb-1 ${context.color}`}>
+            <div className={`text-3xl font-bold mb-2 ${context.color}`}>
               {metric.displayValue}
             </div>
-            <h4 className="font-medium text-sm mb-2">{context.context}</h4>
-            <p className="text-sm text-muted-foreground mb-3">
-              {metric.fullText}
-            </p>
-            <p className="text-xs text-muted-foreground">
-              {context.impact}
+            <p className="text-sm text-muted-foreground">
+              {metric.shortDesc}
             </p>
           </div>
         </div>

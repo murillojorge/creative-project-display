@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { 
   TrendingUp, 
   Users, 
@@ -9,10 +8,7 @@ import {
   Palette, 
   Smartphone, 
   Shield,
-  CheckCircle,
-  Info,
-  ChevronDown,
-  ChevronUp
+  CheckCircle
 } from 'lucide-react';
 
 interface OutcomesProps {
@@ -146,78 +142,35 @@ const parseDisplayMetric = (outcome: string) => {
   };
 };
 
-const InteractiveMetricCard = ({ outcome, index }: { outcome: string, index: number }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+const MetricCard = ({ outcome, index }: { outcome: string, index: number }) => {
   const metric = parseDisplayMetric(outcome);
   const context = getMetricContext(outcome);
   const Icon = context.icon;
   
   return (
     <Card 
-      className={`cursor-pointer transition-all duration-300 hover:shadow-lg animate-fade-in ${
-        isExpanded ? 'ring-2 ring-primary/20' : ''
-      }`}
+      className="transition-all duration-300 hover:shadow-lg animate-fade-in"
       style={{ animationDelay: `${index * 100}ms` }}
-      onClick={() => setIsExpanded(!isExpanded)}
     >
-      <CardContent className="p-4">
-        {/* Compact View */}
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className={`p-2 rounded-lg ${context.bgColor}`}>
-              <Icon size={16} className={context.color} />
-            </div>
-            <div>
-              <div className={`text-2xl font-bold ${context.color}`}>
-                {metric.displayValue}
-              </div>
-              <p className="text-xs text-muted-foreground">
-                {metric.shortDesc}
-              </p>
-            </div>
+      <CardContent className="p-6">
+        <div className="flex items-start gap-4">
+          <div className={`p-3 rounded-xl ${context.bgColor} flex-shrink-0`}>
+            <Icon size={24} className={context.color} />
           </div>
           
-          <div className="flex items-center gap-2">
-            <Info size={14} className="text-muted-foreground" />
-            {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          <div className="flex-1 min-w-0">
+            <div className={`text-3xl font-bold mb-1 ${context.color}`}>
+              {metric.displayValue}
+            </div>
+            <h4 className="font-medium text-sm mb-2">{context.context}</h4>
+            <p className="text-sm text-muted-foreground mb-3">
+              {metric.fullText}
+            </p>
+            <p className="text-xs text-muted-foreground">
+              {context.impact}
+            </p>
           </div>
         </div>
-        
-        {/* Expanded Details */}
-        {isExpanded && (
-          <div className="mt-4 pt-4 border-t space-y-3 animate-fade-in">
-            <div>
-              <h5 className="font-medium text-sm mb-1">{context.context}</h5>
-              <p className="text-xs text-muted-foreground">
-                {metric.fullText}
-              </p>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="flex items-start gap-2">
-                <Badge variant="outline" className="text-xs">Impact</Badge>
-                <p className="text-xs text-muted-foreground flex-1">
-                  {context.impact}
-                </p>
-              </div>
-              
-              <div className="flex items-start gap-2">
-                <Badge variant="outline" className="text-xs">Context</Badge>
-                <p className="text-xs text-muted-foreground flex-1">
-                  {context.metric}
-                </p>
-              </div>
-            </div>
-            
-            {/* Visual indicator */}
-            <div className={`h-1 rounded-full ${context.bgColor} relative overflow-hidden`}>
-              <div 
-                className={`h-full ${context.color.replace('text-', 'bg-')} rounded-full transition-all duration-1000`}
-                style={{ width: '100%' }}
-              />
-            </div>
-          </div>
-        )}
       </CardContent>
     </Card>
   );
@@ -240,24 +193,18 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
       <div className="mb-6">
         <h3 className="font-medium mb-2">Key Outcomes</h3>
         <p className="text-sm text-muted-foreground">
-          Click any metric to explore detailed context and impact
+          Measurable impact and results achieved through this project
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {outcomes.map((outcome, index) => (
-          <InteractiveMetricCard
+          <MetricCard
             key={index}
             outcome={outcome}
             index={index}
           />
         ))}
-      </div>
-      
-      <div className="mt-6 text-center">
-        <p className="text-xs text-muted-foreground">
-          💡 Tip: Click on any card to see why this metric matters
-        </p>
       </div>
     </div>
   );

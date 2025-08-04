@@ -4,4 +4,3 @@
 50 NPS improvement (from 6 to 50)
 90% of UI components use new design system
 100% usability on screens down to 320px
-WCAG 2.1 AA compliance achieved

@@ -11,16 +11,45 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-interface OutcomesProps {
-  content: string;
+interface OutcomeData {
+  value: string;
+  displayValue: string;
+  shortDesc: string;
+  icon: string;
+  color: string;
+  bgColor: string;
+  context: string;
+  impact: string;
+  metric: string;
 }
 
+interface OutcomesData {
+  outcomes: OutcomeData[] | string[];
+}
+
+interface OutcomesProps {
+  content: OutcomesData | string;
+}
+
+// Icon mapping
+const iconMap = {
+  TrendingUp,
+  Users,
+  Heart,
+  Target,
+  Palette,
+  Smartphone,
+  Shield,
+  CheckCircle
+};
+
+// Legacy parsing functions for backward compatibility with markdown format
 const getMetricContext = (outcome: string) => {
   const text = outcome.toLowerCase();
   
   if (text.includes('4x') && text.includes('activation')) {
     return {
-      icon: TrendingUp,
+      icon: 'TrendingUp',
       color: 'text-green-600 dark:text-green-400',
       bgColor: 'bg-green-50 dark:bg-green-950/20',
       context: 'User onboarding optimization',
@@ -31,7 +60,7 @@ const getMetricContext = (outcome: string) => {
   
   if (text.includes('21x') && text.includes('sign-up')) {
     return {
-      icon: Users,
+      icon: 'Users',
       color: 'text-blue-600 dark:text-blue-400',
       bgColor: 'bg-blue-50 dark:bg-blue-950/20',
       context: 'Conversion funnel optimization',
@@ -42,7 +71,7 @@ const getMetricContext = (outcome: string) => {
   
   if (text.includes('88%') && text.includes('satisfaction')) {
     return {
-      icon: Heart,
+      icon: 'Heart',
       color: 'text-red-500 dark:text-red-400',
       bgColor: 'bg-red-50 dark:bg-red-950/20',
       context: 'Customer experience enhancement',
@@ -53,7 +82,7 @@ const getMetricContext = (outcome: string) => {
   
   if (text.includes('nps') && text.includes('50')) {
     return {
-      icon: Target,
+      icon: 'Target',
       color: 'text-purple-600 dark:text-purple-400',
       bgColor: 'bg-purple-50 dark:bg-purple-950/20',
       context: 'Brand loyalty transformation',
@@ -64,7 +93,7 @@ const getMetricContext = (outcome: string) => {
   
   if (text.includes('90%') && text.includes('design system')) {
     return {
-      icon: Palette,
+      icon: 'Palette',
       color: 'text-indigo-600 dark:text-indigo-400',
       bgColor: 'bg-indigo-50 dark:bg-indigo-950/20',
       context: 'Design consistency achievement',
@@ -75,7 +104,7 @@ const getMetricContext = (outcome: string) => {
   
   if (text.includes('100%') && text.includes('usability')) {
     return {
-      icon: Smartphone,
+      icon: 'Smartphone',
       color: 'text-orange-600 dark:text-orange-400',
       bgColor: 'bg-orange-50 dark:bg-orange-950/20',
       context: 'Mobile-first responsive design',
@@ -86,7 +115,7 @@ const getMetricContext = (outcome: string) => {
   
   if (text.includes('wcag') || text.includes('compliance')) {
     return {
-      icon: Shield,
+      icon: 'Shield',
       color: 'text-emerald-600 dark:text-emerald-400',
       bgColor: 'bg-emerald-50 dark:bg-emerald-950/20',
       context: 'Accessibility standards compliance',
@@ -96,7 +125,7 @@ const getMetricContext = (outcome: string) => {
   }
   
   return {
-    icon: CheckCircle,
+    icon: 'CheckCircle',
     color: 'text-primary',
     bgColor: 'bg-primary/10',
     context: 'Project milestone',
@@ -142,10 +171,28 @@ const parseDisplayMetric = (outcome: string) => {
   };
 };
 
-const MetricCard = ({ outcome, index }: { outcome: string, index: number }) => {
-  const metric = parseDisplayMetric(outcome);
-  const context = getMetricContext(outcome);
-  const Icon = context.icon;
+const MetricCard = ({ outcome, index }: { outcome: OutcomeData | string, index: number }) => {
+  let metric: { displayValue: string; shortDesc: string };
+  let context: { icon: string; color: string; bgColor: string };
+  
+  if (typeof outcome === 'string') {
+    // Legacy format - parse from string
+    metric = parseDisplayMetric(outcome);
+    context = getMetricContext(outcome);
+  } else {
+    // New format - use structured data
+    metric = {
+      displayValue: outcome.displayValue,
+      shortDesc: outcome.shortDesc
+    };
+    context = {
+      icon: outcome.icon,
+      color: outcome.color,
+      bgColor: outcome.bgColor
+    };
+  }
+  
+  const Icon = iconMap[context.icon as keyof typeof iconMap] || CheckCircle;
   
   return (
     <Card 
@@ -175,10 +222,18 @@ const MetricCard = ({ outcome, index }: { outcome: string, index: number }) => {
 const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
   if (!content) return null;
   
-  const outcomes = content
-    .split('\n')
-    .map(line => line.trim())
-    .filter(line => line.length > 0);
+  let outcomes: (OutcomeData | string)[] = [];
+  
+  if (typeof content === 'string') {
+    // Legacy string format
+    outcomes = content
+      .split('\n')
+      .map(line => line.trim())
+      .filter(line => line.length > 0);
+  } else if (content.outcomes) {
+    // New structured format
+    outcomes = content.outcomes;
+  }
 
   if (outcomes.length === 0) {
     return null;

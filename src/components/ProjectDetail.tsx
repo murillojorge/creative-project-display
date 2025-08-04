@@ -102,18 +102,18 @@ const ProjectDetail = () => {
       <section className="section">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <div className="mb-8 animate-fade-in">
-              <Badge variant="secondary" className="mb-4">{project.category}</Badge>
-              <h1 className="text-4xl md:text-5xl font-medium mb-6">{project.title}</h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">{project.description}</p>
-            </div>
-            
-            <div className="aspect-[16/10] relative overflow-hidden rounded-2xl mb-12 animate-scale-in [animation-delay:200ms]">
+            <div className="aspect-[16/10] relative overflow-hidden rounded-2xl mb-8 animate-scale-in">
               <img 
                 src={project.imageUrl} 
                 alt={project.title}
                 className="object-cover w-full h-full"
               />
+            </div>
+            
+            <div className="mb-8 animate-fade-in [animation-delay:200ms]">
+              <Badge variant="secondary" className="mb-4">{project.category}</Badge>
+              <h1 className="text-4xl md:text-5xl font-medium mb-6">{project.title}</h1>
+              <p className="text-xl text-muted-foreground max-w-2xl">{project.description}</p>
             </div>
 
             {/* Key Outcomes */}

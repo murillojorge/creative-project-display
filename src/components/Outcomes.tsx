@@ -22,7 +22,7 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
       <h3 className="font-medium mb-4">Key Outcomes</h3>
       <ul className="space-y-1">
         {outcomes.map((outcome, index) => (
-          <li key={index} className="text-sm text-muted-foreground">
+          <li key={index} className="text-sm">
             {outcome}
           </li>
         ))}

@@ -215,8 +215,8 @@ const ProjectDetail = () => {
                 </div>
               </div>
               
-              {!loading && content.results && (
-                <Outcomes content={content.results} />
+              {!loading && content.outcomes && (
+                <Outcomes content={content.outcomes} />
               )}
             </div>
           </div>

@@ -13,7 +13,7 @@ export const loadProjectContent = async (projectSlug: string, section: string): 
 };
 
 export const loadAllProjectContent = async (projectSlug: string) => {
-  const sections = ['challenge', 'solution', 'process', 'results'];
+  const sections = ['challenge', 'solution', 'process', 'results', 'outcomes'];
   const content: Record<string, string> = {};
   
   await Promise.all(

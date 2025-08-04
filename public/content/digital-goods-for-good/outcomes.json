@@ -1,48 +1,32 @@
 {
   "outcomes": [
     {
-      "value": "$250K+ donated to charities",
       "displayValue": "$250K+",
       "shortDesc": "donated to charities",
       "icon": "Heart",
       "color": "text-red-500 dark:text-red-400",
-      "bgColor": "bg-red-50 dark:bg-red-950/20",
-      "context": "Social impact achievement",
-      "impact": "Significant charitable donations demonstrate platform effectiveness",
-      "metric": "Substantial funds raised for meaningful causes"
+      "bgColor": "bg-red-50 dark:bg-red-950/20"
     },
     {
-      "value": "500+ creators engaged",
       "displayValue": "500+",
       "shortDesc": "creators engaged",
       "icon": "Users",
       "color": "text-blue-600 dark:text-blue-400",
-      "bgColor": "bg-blue-50 dark:bg-blue-950/20",
-      "context": "Creator community growth",
-      "impact": "Strong creator adoption drives content diversity and quality",
-      "metric": "Robust creator ecosystem supports sustainable growth"
+      "bgColor": "bg-blue-50 dark:bg-blue-950/20"
     },
     {
-      "value": "50+ charitable organizations supported",
       "displayValue": "50+",
       "shortDesc": "charitable organizations supported",
       "icon": "Target",
       "color": "text-purple-600 dark:text-purple-400",
-      "bgColor": "bg-purple-50 dark:bg-purple-950/20",
-      "context": "Charity partnership success",
-      "impact": "Diverse charity partnerships maximize social impact",
-      "metric": "Wide charity network enables targeted social contributions"
+      "bgColor": "bg-purple-50 dark:bg-purple-950/20"
     },
     {
-      "value": "1000+ digital goods sold for good",
       "displayValue": "1000+",
       "shortDesc": "digital goods sold for good",
       "icon": "CheckCircle",
       "color": "text-primary",
-      "bgColor": "bg-primary/10",
-      "context": "Marketplace activity",
-      "impact": "High transaction volume demonstrates market viability",
-      "metric": "Strong sales volume validates platform concept"
+      "bgColor": "bg-primary/10"
     }
   ]
 }

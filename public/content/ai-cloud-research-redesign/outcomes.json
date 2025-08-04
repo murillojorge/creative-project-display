@@ -1,70 +1,46 @@
 {
   "outcomes": [
     {
-      "value": "4x increase in user activation",
       "displayValue": "4x",
       "shortDesc": "increase in user activation",
       "icon": "TrendingUp",
       "color": "text-green-600 dark:text-green-400",
-      "bgColor": "bg-green-50 dark:bg-green-950/20",
-      "context": "User onboarding optimization",
-      "impact": "Significantly improved user journey and reduced drop-off rates",
-      "metric": "Growth rate that exceeded industry benchmarks by 300%"
+      "bgColor": "bg-green-50 dark:bg-green-950/20"
     },
     {
-      "value": "21x increase in sign-up completion",
       "displayValue": "21x",
       "shortDesc": "increase in sign-up completion",
       "icon": "Users",
       "color": "text-blue-600 dark:text-blue-400",
-      "bgColor": "bg-blue-50 dark:bg-blue-950/20",
-      "context": "Conversion funnel optimization",
-      "impact": "Dramatically streamlined registration process",
-      "metric": "Exceptional conversion rate improvement through UX redesign"
+      "bgColor": "bg-blue-50 dark:bg-blue-950/20"
     },
     {
-      "value": "88% customer satisfaction rating",
       "displayValue": "88%",
       "shortDesc": "customer satisfaction rating",
       "icon": "Heart",
       "color": "text-red-500 dark:text-red-400",
-      "bgColor": "bg-red-50 dark:bg-red-950/20",
-      "context": "Customer experience enhancement",
-      "impact": "High user satisfaction indicates strong product-market fit",
-      "metric": "Score places product in top tier of customer satisfaction"
+      "bgColor": "bg-red-50 dark:bg-red-950/20"
     },
     {
-      "value": "+44 NPS improvement (from 6 to 50)",
       "displayValue": "+44",
       "shortDesc": "NPS improvement",
       "icon": "Target",
       "color": "text-purple-600 dark:text-purple-400",
-      "bgColor": "bg-purple-50 dark:bg-purple-950/20",
-      "context": "Brand loyalty transformation",
-      "impact": "Moved from poor to excellent NPS category",
-      "metric": "44-point improvement represents exceptional customer advocacy"
+      "bgColor": "bg-purple-50 dark:bg-purple-950/20"
     },
     {
-      "value": "90% of UI components use new design system",
       "displayValue": "90%",
       "shortDesc": "of UI components use new design system",
       "icon": "Palette",
       "color": "text-indigo-600 dark:text-indigo-400",
-      "bgColor": "bg-indigo-50 dark:bg-indigo-950/20",
-      "context": "Design consistency achievement",
-      "impact": "Unified user experience across all touchpoints",
-      "metric": "High adoption rate demonstrates effective design governance"
+      "bgColor": "bg-indigo-50 dark:bg-indigo-950/20"
     },
     {
-      "value": "100% usability on screens down to 320px",
       "displayValue": "100%",
       "shortDesc": "usability on screens down to 320px",
       "icon": "Smartphone",
       "color": "text-orange-600 dark:text-orange-400",
-      "bgColor": "bg-orange-50 dark:bg-orange-950/20",
-      "context": "Mobile-first responsive design",
-      "impact": "Full accessibility across all device sizes",
-      "metric": "Complete mobile optimization ensures universal access"
+      "bgColor": "bg-orange-50 dark:bg-orange-950/20"
     }
   ]
 }

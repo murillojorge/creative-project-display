@@ -1,48 +1,32 @@
 {
   "outcomes": [
     {
-      "value": "100% WCAG 2.1 AA compliance",
       "displayValue": "100%",
       "shortDesc": "WCAG 2.1 AA compliance",
       "icon": "Shield",
       "color": "text-emerald-600 dark:text-emerald-400",
-      "bgColor": "bg-emerald-50 dark:bg-emerald-950/20",
-      "context": "Accessibility standards compliance",
-      "impact": "Complete compliance ensures inclusive design for all users",
-      "metric": "Full WCAG AA compliance meets highest accessibility standards"
+      "bgColor": "bg-emerald-50 dark:bg-emerald-950/20"
     },
     {
-      "value": "25% increase in accessible user base",
       "displayValue": "25%",
       "shortDesc": "increase in accessible user base",
       "icon": "Users",
       "color": "text-blue-600 dark:text-blue-400",
-      "bgColor": "bg-blue-50 dark:bg-blue-950/20",
-      "context": "User accessibility expansion",
-      "impact": "Broader user base through improved accessibility",
-      "metric": "Significant growth in accessible user engagement"
+      "bgColor": "bg-blue-50 dark:bg-blue-950/20"
     },
     {
-      "value": "95% reduction in accessibility barriers",
       "displayValue": "95%",
       "shortDesc": "reduction in accessibility barriers",
       "icon": "TrendingUp",
       "color": "text-green-600 dark:text-green-400",
-      "bgColor": "bg-green-50 dark:bg-green-950/20",
-      "context": "Barrier elimination success",
-      "impact": "Near-complete removal of accessibility obstacles",
-      "metric": "Exceptional barrier reduction improves user experience"
+      "bgColor": "bg-green-50 dark:bg-green-950/20"
     },
     {
-      "value": "100% keyboard navigation coverage",
       "displayValue": "100%",
       "shortDesc": "keyboard navigation coverage",
       "icon": "Smartphone",
       "color": "text-orange-600 dark:text-orange-400",
-      "bgColor": "bg-orange-50 dark:bg-orange-950/20",
-      "context": "Navigation accessibility achievement",
-      "impact": "Complete keyboard accessibility ensures universal usability",
-      "metric": "Full keyboard support enables comprehensive access"
+      "bgColor": "bg-orange-50 dark:bg-orange-950/20"
     }
   ]
 }

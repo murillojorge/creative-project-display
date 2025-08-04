@@ -1,48 +1,32 @@
 {
   "outcomes": [
     {
-      "value": "80% reduction in processing time",
       "displayValue": "80%",
       "shortDesc": "reduction in processing time",
       "icon": "TrendingUp",
       "color": "text-green-600 dark:text-green-400",
-      "bgColor": "bg-green-50 dark:bg-green-950/20",
-      "context": "Process efficiency improvement",
-      "impact": "Dramatic time savings improve operational efficiency",
-      "metric": "Significant automation reduces manual processing overhead"
+      "bgColor": "bg-green-50 dark:bg-green-950/20"
     },
     {
-      "value": "99.8% compliance accuracy",
       "displayValue": "99.8%",
       "shortDesc": "compliance accuracy",
       "icon": "Shield",
       "color": "text-emerald-600 dark:text-emerald-400",
-      "bgColor": "bg-emerald-50 dark:bg-emerald-950/20",
-      "context": "Regulatory compliance excellence",
-      "impact": "Near-perfect compliance reduces regulatory risk",
-      "metric": "Exceptional accuracy ensures regulatory adherence"
+      "bgColor": "bg-emerald-50 dark:bg-emerald-950/20"
     },
     {
-      "value": "$2M+ annual cost savings",
       "displayValue": "$2M+",
       "shortDesc": "annual cost savings",
       "icon": "TrendingUp",
       "color": "text-green-600 dark:text-green-400",
-      "bgColor": "bg-green-50 dark:bg-green-950/20",
-      "context": "Financial impact achievement",
-      "impact": "Substantial cost reduction improves bottom line",
-      "metric": "Significant annual savings demonstrate ROI"
+      "bgColor": "bg-green-50 dark:bg-green-950/20"
     },
     {
-      "value": "100% audit success rate",
       "displayValue": "100%",
       "shortDesc": "audit success rate",
       "icon": "CheckCircle",
       "color": "text-primary",
-      "bgColor": "bg-primary/10",
-      "context": "Audit compliance excellence",
-      "impact": "Perfect audit record builds stakeholder confidence",
-      "metric": "Flawless audit performance validates system integrity"
+      "bgColor": "bg-primary/10"
     }
   ]
 }

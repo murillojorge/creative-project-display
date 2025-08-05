@@ -240,9 +240,12 @@ const ProjectDetail = () => {
                 <Button variant="ghost" asChild className="flex-1 justify-start pl-1 h-auto py-3">
                   <Link to={`/project/${prevProject.slug}`} className="flex items-center gap-3">
                     <ChevronLeft className="w-5 h-5" />
-                    <div className="text-left">
+                    <div className="text-left hidden sm:block">
                       <p className="text-sm text-muted-foreground">Previous</p>
                       <p className="font-medium">{prevProject.title}</p>
+                    </div>
+                    <div className="text-left sm:hidden">
+                      <p className="text-sm font-medium">Previous</p>
                     </div>
                   </Link>
                 </Button>
@@ -251,9 +254,12 @@ const ProjectDetail = () => {
               {nextProject ? (
                 <Button variant="ghost" asChild className="flex-1 justify-end pr-1 h-auto py-3">
                   <Link to={`/project/${nextProject.slug}`} className="flex items-center gap-3">
-                    <div className="text-right">
+                    <div className="text-right hidden sm:block">
                       <p className="text-sm text-muted-foreground">Next</p>
                       <p className="font-medium">{nextProject.title}</p>
+                    </div>
+                    <div className="text-right sm:hidden">
+                      <p className="text-sm font-medium">Next</p>
                     </div>
                     <ChevronRight className="w-5 h-5" />
                   </Link>

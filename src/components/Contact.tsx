@@ -19,7 +19,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-medium mb-2">Phone</h3>
-              <a href="tel:+50670137123" className="hover:text-foreground transition-colors">(506) 7013-7123</a>
+              <a href="tel:+50670137123" className="text-muted-foreground hover:text-foreground transition-colors">(506) 7013-7123</a>
             </div>
             
             <div className="p-6 rounded-lg border border-border bg-card hover:shadow-sm transition-shadow">
@@ -30,7 +30,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-medium mb-2">Email</h3>
-              <a href="mailto:jorge@jmurillo.me" className="hover:text-foreground transition-colors">jorge@jmurillo.me</a>
+              <a href="mailto:jorge@jmurillo.me" className="text-muted-foreground hover:text-foreground transition-colors">jorge@jmurillo.me</a>
             </div>
             
             <div className="p-6 rounded-lg border border-border bg-card hover:shadow-sm transition-shadow">

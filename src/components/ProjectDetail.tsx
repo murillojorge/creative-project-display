@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import Contact from './Contact';
 import { GalleryModal } from './GalleryModal';
 import Outcomes from './Outcomes';
+import Testimonial from './Testimonial';
 import ReactMarkdown from 'react-markdown';
 import { projects } from '@/data/projects';
 import { loadAllProjectContent } from '@/utils/contentLoader';
@@ -225,6 +226,14 @@ const ProjectDetail = () => {
                     ))}
                   </div>
                 </div>
+
+                {/* Testimonial */}
+                <Testimonial
+                  quote="This project exceeded our expectations. The attention to detail and innovative approach delivered exactly what we needed."
+                  author="Sarah Johnson"
+                  role="Product Manager"
+                  company="TechCorp Inc."
+                />
 
               </div>
             </div>

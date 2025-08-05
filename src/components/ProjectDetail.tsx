@@ -237,7 +237,7 @@ const ProjectDetail = () => {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-between py-8 border-t">
               {prevProject ? (
-                <Button variant="ghost" asChild className="flex-1 justify-start">
+                <Button variant="ghost" asChild className="flex-1 justify-start pl-1">
                   <Link to={`/project/${prevProject.slug}`} className="flex items-center gap-3">
                     <ChevronLeft className="w-5 h-5" />
                     <div className="text-left">
@@ -249,7 +249,7 @@ const ProjectDetail = () => {
               ) : <div />}
               
               {nextProject ? (
-                <Button variant="ghost" asChild className="flex-1 justify-end">
+                <Button variant="ghost" asChild className="flex-1 justify-end pr-1">
                   <Link to={`/project/${nextProject.slug}`} className="flex items-center gap-3">
                     <div className="text-right">
                       <p className="text-sm text-muted-foreground">Next</p>

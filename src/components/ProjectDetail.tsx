@@ -56,7 +56,7 @@ const ProjectDetail = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-gradient-mesh flex items-center justify-center">
+      <div className="min-h-screen bg-pattern-grid flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-medium mb-4">Project Not Found</h1>
           <Button onClick={handleBackToPortfolio}>
@@ -69,7 +69,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-mesh">
+    <div className="min-h-screen bg-pattern-grid">
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b">
         <div className="container-width py-4">

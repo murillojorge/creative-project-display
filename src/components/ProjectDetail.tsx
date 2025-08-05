@@ -211,18 +211,7 @@ const ProjectDetail = () => {
               )}
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-8 animate-fade-in [animation-delay:900ms]">
-              <div>
-                <h3 className="font-medium mb-4">Technologies</h3>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="outline">{tech}</Badge>
-                  ))}
-                </div>
-              </div>
-              
-            </div>
+            {/* Sidebar - Hidden */}
           </div>
         </div>
       </section>

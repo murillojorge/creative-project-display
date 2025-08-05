@@ -100,8 +100,8 @@ const ProjectDetail = () => {
 
       {/* Hero Section */}
       <section className="section">
-        <div className="container-width">
-          <div className="max-w-4xl mx-auto">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full">
             <div className="aspect-[16/10] relative overflow-hidden rounded-2xl mb-8 animate-scale-in">
               <img 
                 src={project.imageUrl} 
@@ -129,8 +129,8 @@ const ProjectDetail = () => {
       {/* Image Gallery */}
       {project.gallery && project.gallery.length > 1 && (
         <section className="section">
-          <div className="container-width">
-            <div className="max-w-4xl mx-auto">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="w-full">
               <h2 className="text-2xl font-medium mb-4 animate-fade-in">Gallery</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {project.gallery.map((image, index) => (
@@ -161,8 +161,8 @@ const ProjectDetail = () => {
 
       {/* Project Details */}
       <section className="section">
-        <div className="container-width">
-          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-12">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full grid md:grid-cols-3 gap-12">
             {/* Main Content */}
             <div className="md:col-span-2 space-y-12">
               {loading ? (
@@ -233,8 +233,8 @@ const ProjectDetail = () => {
 
       {/* Navigation Footer */}
       <section className="section">
-        <div className="container-width">
-          <div className="max-w-4xl mx-auto">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full">
             <div className="flex items-center justify-between py-8 border-t">
               {prevProject ? (
                 <Button variant="ghost" asChild className="flex-1 justify-start pl-1 h-auto py-3">

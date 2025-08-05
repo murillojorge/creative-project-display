@@ -211,7 +211,23 @@ const ProjectDetail = () => {
               )}
             </div>
 
-            {/* Sidebar - Hidden */}
+            {/* Sidebar */}
+            <div className="md:col-span-1">
+              <div className="sticky top-24 space-y-8">
+                {/* Technologies */}
+                <div className="animate-fade-in [animation-delay:400ms]">
+                  <h3 className="text-lg font-medium mb-4">Technologies</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="outline">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </section>

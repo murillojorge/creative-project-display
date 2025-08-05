@@ -182,28 +182,28 @@ const ProjectDetail = () => {
                 <>
                   <div className="animate-fade-in [animation-delay:500ms]">
                     <h2 className="text-2xl font-medium mb-4">Challenge</h2>
-                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none text-muted-foreground">
                       <ReactMarkdown>{content.challenge || 'Content loading...'}</ReactMarkdown>
                     </div>
                   </div>
 
                   <div className="animate-fade-in [animation-delay:600ms]">
                     <h2 className="text-2xl font-medium mb-4">Solution</h2>
-                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none text-muted-foreground">
                       <ReactMarkdown>{content.solution || 'Content loading...'}</ReactMarkdown>
                     </div>
                   </div>
 
                   <div className="animate-fade-in [animation-delay:700ms]">
                     <h2 className="text-2xl font-medium mb-4">Process</h2>
-                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none text-muted-foreground">
                       <ReactMarkdown>{content.process || 'Content loading...'}</ReactMarkdown>
                     </div>
                   </div>
 
                   <div className="animate-fade-in [animation-delay:800ms]">
                     <h2 className="text-2xl font-medium mb-4">Results</h2>
-                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none">
+                    <div className="leading-relaxed prose prose-neutral dark:prose-invert max-w-none text-muted-foreground">
                       <ReactMarkdown>{content.results || 'Content loading...'}</ReactMarkdown>
                     </div>
                   </div>

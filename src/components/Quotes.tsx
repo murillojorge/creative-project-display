@@ -9,10 +9,10 @@ const quotes = [
     company: "Intel"
   },
   {
-    text: "Jorge is a great designer who elevated our product's aesthetic and user experience. His deep knowledge of accessibility ensured our designs were inclusive and user-friendly for all. Jorge consistently sought to optimize the design-to-development handoff, fostering greater team efficiency. He was also instrumental in improving our design system, which enhanced our team's productivity.",
+    text: "Jorge is a great designer who elevated our product's aesthetic and user experience. His deep knowledge of accessibility ensured our designs were inclusive and user-friendly for all. He was also instrumental in improving our design system, which enhanced our team's productivity.",
     author: "Mauricio Varela",
     role: "Product Manager",
-    company: "Ex-Intel"
+    company: "Intel"
   },
   {
     text: "Jorge is the ultimate team player. Not only is he an impressive UX developer, he is insightful, detail-oriented and challenges others to be the best of themselves.",

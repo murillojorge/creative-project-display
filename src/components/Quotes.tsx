@@ -3,22 +3,22 @@ import { Quote } from 'lucide-react';
 
 const quotes = [
   {
-    text: "It was a pleasure working with Jorge at Intel Tiber AI Cloud. He's a talented UX designer who was critical to our team's success.",
+    text: "He's a natural leader and a strong collaborator who effectively aligned stakeholders and engineering teams on a shared user-centric vision.Jorge's strategic approach and dedication to quality make him a valuable asset to any team.",
     author: "Daniel Delgado",
     role: "Senior Engineering Manager",
     company: "Intel"
   },
   {
-    text: "Jorge brings exceptional design thinking and technical expertise to every project. His ability to translate complex requirements into intuitive user experiences is remarkable.",
-    author: "Sarah Chen",
+    text: "Jorge is a great designer who elevated our product's aesthetic and user experience. His deep knowledge of accessibility ensured our designs were inclusive and user-friendly for all. Jorge consistently sought to optimize the design-to-development handoff, fostering greater team efficiency. He was also instrumental in improving our design system, which enhanced our team's productivity.",
+    author: "Mauricio Varela",
     role: "Product Manager",
-    company: "Microsoft"
+    company: "Ex-Intel"
   },
   {
-    text: "Working with Jorge was transformative for our product. His attention to detail and user-centered approach delivered results beyond our expectations.",
-    author: "Michael Torres",
-    role: "CTO",
-    company: "TechStart Inc"
+    text: "Jorge is the ultimate team player. Not only is he an impressive UX developer, he is insightful, detail-oriented and challenges others to be the best of themselves.",
+    author: "Edgar Fernandez",
+    role: "Founder",
+    company: "Edenia Labs"
   }
 ];
 

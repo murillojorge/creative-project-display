@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-
 // Sample project data
 const projects = [{
   id: 1,
@@ -46,8 +45,9 @@ const projects = [{
   category: "User Flows",
   imageUrl: "/images/projects/crypto-integrations/hero.jpg"
 }];
+
 const ProjectGrid = () => {
-  return <section id="projects" className="section">
+  return <section id="projects" className="section py-20">
       <div className="container-width">
         <div className="mb-12 text-center max-w-2xl mx-auto">
           <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full mb-4">
@@ -63,4 +63,5 @@ const ProjectGrid = () => {
       </div>
     </section>;
 };
+
 export default ProjectGrid;

@@ -9,7 +9,7 @@ const About = () => {
           <div className="order-2 md:order-1">
             <div className="aspect-square max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden">
               <img 
-                src="/images/jmurillo-me.jpg" 
+                src="/images/jmurillo-me-2.jpg" 
                 alt="Jorge, happily sitting next to a lake." 
                 className="w-full h-full object-cover"
               />

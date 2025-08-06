@@ -7,7 +7,7 @@ const About = () => {
       <div className="container-width">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div className="order-2 md:order-1">
-            <div className="aspect-square max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden">
+            <div className="aspect-square max-w-md mx-auto md:mx-0 rounded-full overflow-hidden">
               <img 
                 src="/images/jmurillo-me-2.jpg" 
                 alt="Jorge, happily sitting next to a lake." 

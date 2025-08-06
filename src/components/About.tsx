@@ -9,8 +9,8 @@ const About = () => {
           <div className="order-2 md:order-1">
             <div className="aspect-square max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop" 
-                alt="Designer portrait" 
+                src="src/assets/jmurillo.jpg" 
+                alt="Jorge is happily sitting next to a lake" 
                 className="w-full h-full object-cover"
               />
             </div>

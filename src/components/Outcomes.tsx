@@ -195,18 +195,16 @@ const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: 
   
   return (
     <div 
-      className="flex items-center gap-3 py-2 animate-fade-in"
+      className={`inline-flex items-center gap-2 px-3 py-2 rounded-full border ${context.bgColor} animate-fade-in mr-2 mb-2`}
       style={{ animationDelay: `${index * 50}ms` }}
     >
-      <Icon size={18} className={context.color} />
-      <div className="flex items-baseline gap-3">
-        <span className={`text-3xl font-bold ${context.color}`}>
-          {metric.displayValue}
-        </span>
-        <span className="text-lg text-muted-foreground">
-          {metric.shortDesc}
-        </span>
-      </div>
+      <Icon size={14} className={context.color} />
+      <span className={`text-sm font-semibold ${context.color}`}>
+        {metric.displayValue}
+      </span>
+      <span className="text-xs text-muted-foreground">
+        {metric.shortDesc}
+      </span>
     </div>
   );
 };
@@ -240,7 +238,7 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
         </p>
       </div>
       
-      <div className="space-y-1">
+      <div className="flex flex-wrap">
         {outcomes.map((outcome, index) => (
           <MetricItem
             key={index}

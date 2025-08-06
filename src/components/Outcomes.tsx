@@ -195,7 +195,7 @@ const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: 
   
   return (
     <div 
-      className="inline-flex items-center gap-3 px-4 py-3 rounded-full border bg-muted/50 animate-fade-in mr-3 mb-3"
+      className="inline-flex items-center gap-3 px-4 py-3 rounded-full border bg-muted/30 animate-fade-in mr-3 mb-3"
       style={{ animationDelay: `${index * 50}ms` }}
     >
       <Icon size={18} className="text-muted-foreground" />

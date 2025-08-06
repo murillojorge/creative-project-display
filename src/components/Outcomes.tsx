@@ -248,15 +248,54 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-        {outcomes.map((outcome, index) => (
-          <MetricCard
-            key={index}
-            outcome={outcome}
-            index={index}
-          />
-        ))}
-      </div>
+      <Card className="p-6">
+        <div className="space-y-4">
+          {outcomes.map((outcome, index) => {
+            let metric: { displayValue: string; shortDesc: string };
+            let context: { icon: string; color: string; bgColor: string };
+            
+            if (typeof outcome === 'string') {
+              // Legacy format - parse from string
+              metric = parseDisplayMetric(outcome);
+              context = getMetricContext(outcome);
+            } else {
+              // New format - use structured data
+              metric = {
+                displayValue: outcome.displayValue,
+                shortDesc: outcome.shortDesc
+              };
+              context = {
+                icon: outcome.icon,
+                color: outcome.color,
+                bgColor: outcome.bgColor
+              };
+            }
+            
+            const Icon = iconMap[context.icon as keyof typeof iconMap] || CheckCircle;
+            
+            return (
+              <div 
+                key={index}
+                className="flex items-center gap-4 p-4 rounded-lg border bg-background/50 transition-all duration-300 hover:bg-background/80 animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className={`p-3 rounded-xl ${context.bgColor} flex-shrink-0`}>
+                  <Icon size={24} className={context.color} />
+                </div>
+                
+                <div className="flex-1 min-w-0">
+                  <div className={`text-3xl font-bold mb-2 ${context.color}`}>
+                    {metric.displayValue}
+                  </div>
+                  <p className="text-base font-medium text-foreground">
+                    {metric.shortDesc}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </Card>
     </div>
   );
 };

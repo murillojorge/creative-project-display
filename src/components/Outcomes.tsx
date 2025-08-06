@@ -195,20 +195,17 @@ const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: 
   
   return (
     <div 
-      className="flex items-center gap-4 py-4 animate-fade-in"
-      style={{ animationDelay: `${index * 100}ms` }}
+      className="flex items-center gap-3 py-2 animate-fade-in"
+      style={{ animationDelay: `${index * 50}ms` }}
     >
-      <div className={`p-3 rounded-xl ${context.bgColor} flex-shrink-0`}>
-        <Icon size={24} className={context.color} />
-      </div>
-      
-      <div className="flex-1 min-w-0">
-        <div className={`text-3xl font-bold mb-1 ${context.color}`}>
+      <Icon size={18} className={context.color} />
+      <div className="flex items-baseline gap-3">
+        <span className={`text-xl font-bold ${context.color}`}>
           {metric.displayValue}
-        </div>
-        <p className="text-base font-medium text-foreground">
+        </span>
+        <span className="text-sm text-muted-foreground">
           {metric.shortDesc}
-        </p>
+        </span>
       </div>
     </div>
   );
@@ -236,14 +233,14 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
 
   return (
     <div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-medium mb-4">Key Outcomes</h2>
+      <div className="mb-6">
+        <h2 className="text-2xl font-medium mb-2">Key Outcomes</h2>
         <p className="text-sm text-muted-foreground">
           Measurable impact and results achieved through this project
         </p>
       </div>
       
-      <div className="space-y-2">
+      <div className="space-y-1">
         {outcomes.map((outcome, index) => (
           <MetricItem
             key={index}

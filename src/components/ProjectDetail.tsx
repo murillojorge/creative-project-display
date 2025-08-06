@@ -16,7 +16,7 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [content, setContent] = useState<Record<string, string>>({});
+  const [content, setContent] = useState<Record<string, any>>({});
   const [loading, setLoading] = useState(true);
   
   // Scroll to top when component mounts or slug changes
@@ -228,12 +228,14 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* Testimonial */}
-                <Testimonial
-                  quote="This project exceeded our expectations. The attention to detail and innovative approach delivered exactly what we needed."
-                  author="Sarah Johnson"
-                  role="Product Manager"
-                  company="TechCorp Inc."
-                />
+                {content.testimonial && (
+                  <Testimonial
+                    quote={content.testimonial.quote}
+                    author={content.testimonial.author}
+                    role={content.testimonial.role}
+                    company={content.testimonial.company}
+                  />
+                )}
 
               </div>
             </div>

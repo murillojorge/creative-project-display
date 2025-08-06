@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ProjectGrid from '@/components/ProjectGrid';
 import About from '@/components/About';
+import Quotes from '@/components/Quotes';
 import Contact from '@/components/Contact';
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
       <Hero />
       <ProjectGrid />
       <About />
+      <Quotes />
       <Contact />
       <div className="py-8 text-center">
         <p className="text-sm text-muted-foreground">

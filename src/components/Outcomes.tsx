@@ -200,10 +200,10 @@ const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: 
     >
       <Icon size={18} className={context.color} />
       <div className="flex items-baseline gap-3">
-        <span className={`text-xl font-bold ${context.color}`}>
+        <span className={`text-3xl font-bold ${context.color}`}>
           {metric.displayValue}
         </span>
-        <span className="text-sm text-muted-foreground">
+        <span className="text-lg text-muted-foreground">
           {metric.shortDesc}
         </span>
       </div>

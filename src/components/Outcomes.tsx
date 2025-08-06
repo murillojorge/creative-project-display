@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
 import { 
   TrendingUp, 
   Users, 
@@ -171,7 +170,7 @@ const parseDisplayMetric = (outcome: string) => {
   };
 };
 
-const MetricCard = ({ outcome, index }: { outcome: OutcomeData | string, index: number }) => {
+const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: number }) => {
   let metric: { displayValue: string; shortDesc: string };
   let context: { icon: string; color: string; bgColor: string };
   
@@ -195,27 +194,23 @@ const MetricCard = ({ outcome, index }: { outcome: OutcomeData | string, index: 
   const Icon = iconMap[context.icon as keyof typeof iconMap] || CheckCircle;
   
   return (
-    <Card 
-      className="transition-all duration-300 hover:shadow-lg animate-fade-in"
+    <div 
+      className="flex items-center gap-4 py-4 animate-fade-in"
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      <CardContent className="p-6">
-        <div className="flex items-center gap-4">
-          <div className={`p-3 rounded-xl ${context.bgColor} flex-shrink-0`}>
-            <Icon size={24} className={context.color} />
-          </div>
-          
-          <div className="flex-1 min-w-0">
-            <div className={`text-3xl font-bold mb-2 ${context.color}`}>
-              {metric.displayValue}
-            </div>
-            <p className="text-base font-medium text-foreground">
-              {metric.shortDesc}
-            </p>
-          </div>
+      <div className={`p-3 rounded-xl ${context.bgColor} flex-shrink-0`}>
+        <Icon size={24} className={context.color} />
+      </div>
+      
+      <div className="flex-1 min-w-0">
+        <div className={`text-3xl font-bold mb-1 ${context.color}`}>
+          {metric.displayValue}
         </div>
-      </CardContent>
-    </Card>
+        <p className="text-base font-medium text-foreground">
+          {metric.shortDesc}
+        </p>
+      </div>
+    </div>
   );
 };
 
@@ -248,9 +243,9 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="space-y-2">
         {outcomes.map((outcome, index) => (
-          <MetricCard
+          <MetricItem
             key={index}
             outcome={outcome}
             index={index}

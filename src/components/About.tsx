@@ -20,14 +20,14 @@ const About = () => {
             <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-full mb-4">
               About Me
             </span>
-            <h2 className="mb-6">For the love of the Internet</h2>
+<h2 className="mb-6">To build a better Internet</h2>
             
             <div className="space-y-4 text-muted-foreground">
               <p>
-                As a design professional with extensive experience in digital environments, I've witnessed and adapted to the many iterations of the Internet. My work has spanned organizational contexts from experimental-focused startups to process-driven enterprises, each presenting unique opportunities for innovation.
+                As a designer and technologist with extensive experience in digital environments, I've witnessed and adapted to the many iterations of the Internet. My work has spanned organizational contexts from experimental-focused startups to process-driven enterprises, each presenting unique opportunities for innovation.
               </p>
               <p>
-                My design philosophy is built on understanding user needs, business goals, and technological possibilities to create solutions that innovate, but mainly solve real problems.
+                My design philosophy is built on understanding people's needs, business goals, and technological possibilities to create solutions that innovate, but mainly solve real problems.
               </p>
               <p>
                 Let's work together on the quest to build a better Internet.
@@ -37,7 +37,7 @@ const About = () => {
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="space-y-1">
                 <h4 className="text-sm font-medium text-foreground">Design Tools</h4>
-                <p className="text-sm text-muted-foreground">Figma, Protopie, Lovable AI, Adobe Suite, Affinity</p>
+                <p className="text-sm text-muted-foreground">Figma, Lovable, Protopie, Adobe Suite, Affinity</p>
               </div>
               <div className="space-y-1">
                 <h4 className="text-sm font-medium text-foreground">Methodology</h4>
@@ -45,11 +45,11 @@ const About = () => {
               </div>
               <div className="space-y-1">
                 <h4 className="text-sm font-medium text-foreground">Advocacy</h4>
-                <p className="text-sm text-muted-foreground">Accessibility, Usability, Collaboration, Open Source, Ethical AI</p>
+                <p className="text-sm text-muted-foreground">Usability, Accessibility, Ethical AI</p>
               </div>
               <div className="space-y-1">
                 <h4 className="text-sm font-medium text-foreground">Collaboration</h4>
-                <p className="text-sm text-muted-foreground">Design Systems, Documentation, Workshops, Mentoring</p>
+                <p className="text-sm text-muted-foreground">Design Systems, Workshops, Mentoring, Open Source</p>
               </div>
             </div>
           </div>

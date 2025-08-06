@@ -32,7 +32,7 @@ const Navbar = () => {
         </a>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#projects" className="nav-link">Projects</a>
+          <a href="#projects" className="nav-link">Portfolio</a>
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>
           <ThemeToggle />

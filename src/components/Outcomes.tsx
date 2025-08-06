@@ -195,14 +195,14 @@ const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: 
   
   return (
     <div 
-      className={`inline-flex items-center gap-2 px-3 py-2 rounded-full border ${context.bgColor} animate-fade-in mr-2 mb-2`}
+      className="inline-flex items-center gap-3 px-4 py-3 rounded-full border bg-muted/50 animate-fade-in mr-3 mb-3"
       style={{ animationDelay: `${index * 50}ms` }}
     >
-      <Icon size={14} className={context.color} />
-      <span className={`text-sm font-semibold ${context.color}`}>
+      <Icon size={18} className="text-muted-foreground" />
+      <span className="text-lg font-semibold text-foreground">
         {metric.displayValue}
       </span>
-      <span className="text-xs text-muted-foreground">
+      <span className="text-base text-muted-foreground">
         {metric.shortDesc}
       </span>
     </div>

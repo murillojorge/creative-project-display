@@ -1,6 +1,6 @@
 export const intercompanyTransactionsProject = {
   id: "5",
-  slug: "intercompany-transactions-blockchain",
+  slug: "intercompany-transactions",
   title: "Intercompany Transactions Made Easy",
   description: "A blockchain supported web app, designed and developed to help big companies untangle the complexity and time consumption while processing intercompany transactions.",
   category: "UX/UI Design",

@@ -2,31 +2,18 @@
   "outcomes": [
     {
       "displayValue": "80%",
-      "shortDesc": "reduction in processing time",
+      "shortDesc": "estimated reduction in processing time",
       "icon": "TrendingUp",
       "color": "text-green-600 dark:text-green-400",
       "bgColor": "bg-green-50 dark:bg-green-950/20"
     },
     {
       "displayValue": "99.8%",
-      "shortDesc": "compliance accuracy",
+      "shortDesc": "estimated compliance accuracy",
       "icon": "Shield",
       "color": "text-emerald-600 dark:text-emerald-400",
       "bgColor": "bg-emerald-50 dark:bg-emerald-950/20"
     },
-    {
-      "displayValue": "$2M+",
-      "shortDesc": "annual cost savings",
-      "icon": "TrendingUp",
-      "color": "text-green-600 dark:text-green-400",
-      "bgColor": "bg-green-50 dark:bg-green-950/20"
-    },
-    {
-      "displayValue": "100%",
-      "shortDesc": "audit success rate",
-      "icon": "CheckCircle",
-      "color": "text-primary",
-      "bgColor": "bg-primary/10"
-    }
+
   ]
 }

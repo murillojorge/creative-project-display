@@ -1,7 +1,1 @@
-Reduced transaction processing time by **80%** and improved compliance accuracy to **99.8%**.
-
-### Business Impact
-- 80% reduction in processing time
-- 99.8% compliance accuracy
-- $2M+ annual cost savings
-- 100% audit success rate
+Even though we were using top of the line blockchain technology, at that moment a big opportunity to brag and display all of its novelty, we decided to hide it almost completely from the users perception. Users don’t need or want to know what sort of ledger we’re using behind the scenes, users want to do their jobs and continue with their day. Centering on the needs of the users and not on the tech we use is crucial if we want to bring real solutions to our day to day problems. We need to create frictionless systems that empower users to complete their tasks, but also share their quota of responsibility when doing so. InterX proved to be a good example of how you can bring the power of new tech, such as blockchain, to help complex problems without the need for users to know anything about it.

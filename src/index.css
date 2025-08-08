@@ -148,11 +148,11 @@
   }
   
   .project-card {
-    @apply relative overflow-hidden rounded-lg bg-card border border-border/40 transition-all duration-300 ease-in-out;
+    @apply relative overflow-hidden rounded-lg bg-card border border-border/50 transition-all duration-300 ease-in-out;
   }
   
   .project-card:hover {
-    @apply border-border/80 shadow-md transform translate-y-[-4px];
+    @apply border-border/80 shadow-md hover:-translate-y-1;
   }
   
   .glass-effect {

@@ -220,7 +220,7 @@ const ProjectDetail = () => {
                   <h3 className="text-lg font-medium mb-4">Technologies</h3>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline">
+                      <Badge key={tech} variant="secondary">
                         {tech}
                       </Badge>
                     ))}

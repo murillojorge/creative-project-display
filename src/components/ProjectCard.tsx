@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
 
 interface ProjectCardProps {
   title: string;
@@ -39,9 +40,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="p-6">
         <div className="mb-2">
-          <span className="text-xs font-medium px-2 py-1 bg-secondary text-secondary-foreground rounded-full">
+          <Badge variant="secondary">
             {category}
-          </span>
+          </Badge>
         </div>
         <h3 className="text-xl font-medium mt-2 mb-2 group-hover:text-primary transition-colors">{title}</h3>
         <p className="text-muted-foreground text-sm">{description}</p>

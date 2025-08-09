@@ -12,15 +12,15 @@ const projects = [{
 }, {
   id: 2,
   slug: "ai-cloud-research-redesign",
-  title: "AI Cloud Research and Redesign",
-  description: "User research and redesign aimed to improve the user experience and expand the platform's capabilities.",
+  title: "AI Cloud Redesign",
+  description: "Redesign aimed to improve the user experience and expand the platform's capabilities.",
   category: "UI/UX Design",
   imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg"
 }, {
   id: 3,
   slug: "intercompany-transactions",
   title: "Intercompany Transactions Made Easy",
-  description: "A minimalist e-commerce application designed for an emerging fashion brand.",
+  description: "End-to-end user experience and design for intercompany transactions based on blockchain technology.",
   category: "UI/UX Design",
   imageUrl: "/images/projects/intercompany-transactions/hero.jpg"
 }, {
@@ -34,7 +34,7 @@ const projects = [{
   id: 5,
   slug: "digital-goods-for-good",
   title: "Digital Goods for Good",
-  description: "A comprehensive travel planning platform that simplifies trip organization and discovery.",
+  description: "A hackathon winning concept built to attract new users and add good-will value to NFTs",
   category: "Hackathon",
   imageUrl: "/images/projects/digital-goods-for-good/hero.jpg"
 }, {

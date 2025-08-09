@@ -6,7 +6,6 @@ import { Badge } from '@/components/ui/badge';
 import Contact from './Contact';
 import { GalleryModal } from './GalleryModal';
 import Outcomes from './Outcomes';
-import Testimonial from './Testimonial';
 import ReactMarkdown from 'react-markdown';
 import { projects } from '@/data/projects';
 import { loadAllProjectContent } from '@/utils/contentLoader';
@@ -226,16 +225,6 @@ const ProjectDetail = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Testimonial */}
-                {content.testimonial && (
-                  <Testimonial
-                    quote={content.testimonial.quote}
-                    author={content.testimonial.author}
-                    role={content.testimonial.role}
-                    company={content.testimonial.company}
-                  />
-                )}
 
               </div>
             </div>

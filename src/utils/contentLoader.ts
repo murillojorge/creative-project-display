@@ -34,24 +34,6 @@ export const loadProjectOutcomes = async (projectSlug: string): Promise<any> => 
   }
 };
 
-export const loadProjectTestimonial = async (projectSlug: string): Promise<any> => {
-  try {
-    const response = await fetch(`/content/${projectSlug}/testimonial.json`);
-    if (!response.ok) {
-      throw new Error(`Failed to load testimonial for ${projectSlug}`);
-    }
-    return await response.json();
-  } catch (error) {
-    console.error(`Error loading testimonial:`, error);
-    return {
-      quote: "This project exceeded our expectations. The attention to detail and innovative approach delivered exactly what we needed.",
-      author: "Sarah Johnson",
-      role: "Product Manager",
-      company: "TechCorp Inc."
-    };
-  }
-};
-
 export const loadAllProjectContent = async (projectSlug: string) => {
   const sections = ['challenge', 'solution', 'process', 'results'];
   const content: Record<string, any> = {};
@@ -65,9 +47,6 @@ export const loadAllProjectContent = async (projectSlug: string) => {
   
   // Load outcomes separately (could be JSON or markdown)
   content.outcomes = await loadProjectOutcomes(projectSlug);
-  
-  // Load testimonial
-  content.testimonial = await loadProjectTestimonial(projectSlug);
   
   return content;
 };

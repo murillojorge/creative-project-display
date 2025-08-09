@@ -1,6 +1,14 @@
-Built with a focus on social impact, user experience, and transparent operations.
+During ideation we spotted that there were at least four important aspects and touchpoints that we should definitely work on.
 
-1. **Research** - Studied creator and charity needs
-2. **Design** - Created user-friendly interfaces
-3. **Development** - Built robust marketplace platform
-4. **Impact** - Measured and optimized social outcomes
+### Demographics
+Blockchain and crypto is a heavily male dominated space, and we need to fix this. Having been approached by a wild animal shelter in the past to develop a game, we previously had time to study and develop personas that helped us understand the behavior and motivations of potential users. Two of our three initial personas were young and middle aged females of empathic and altruistic disposition, so it felt natural to bring them back and provide new potential users to this new tech.
+
+### Authentication
+Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know. - Jakob's Law
+We need to help users onboard in a familiar way. Blockchain wallet connection is the usual way early adopters interact with decentralized apps, but if we want to bring new demographics we need to go back to user/password and oAuth. Sounds like an easy fix, but behind the scenes this solution required quite a bit of dev work and big doses of UX evangelism.
+
+### Tech Invisibility
+For a while now, and with the help some guerrilla research on Twitter, we came to the conclusion that there's big resistance, even hatred, towards NFTs. Part of it is lack of understanding of the tech, part of it is a reaction towards the apparently insane behavior of this particular market. As one Twitter user said: "Monkey heads are being sold for millions while real artist starve...". Or another: "Non fungible what? ". So our effort here is to start to look for a better way to refer about this virtual goods without alienating current users. The truth is that if we mean to bring crypto, NFTs, DAOs and many other blockchain implementations to the mainstream we will need to make the tech invisible. How many users even think about which database is Instagram using while they post their weekend selfies?
+
+### Virtual Goods with Real Use 
+Closely related to the last point we agree with with the notion that virtual goods must have real use in order to have monetary value. gGoods was built to connect charitable organizations with people willing to help. Organizations will benefit by being able to easily mint the NFT collections, market and sell them. But even altruistic donors would like to have some sort of use for their gGoods, so we made use of the open source standards and created a couple of super simple games. A selfie cam to take photos with your favorite animal friend and a Mapbox based game where you set free your animals to roam the world.

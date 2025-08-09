@@ -1,32 +1,18 @@
 {
   "outcomes": [
     {
-      "displayValue": "$250K+",
-      "shortDesc": "donated to charities",
-      "icon": "Heart",
+      "displayValue": "2nd Place",
+      "shortDesc": "Hackathon winner",
+      "icon": "Trophy",
       "color": "text-red-500 dark:text-red-400",
       "bgColor": "bg-red-50 dark:bg-red-950/20"
     },
     {
-      "displayValue": "500+",
-      "shortDesc": "creators engaged",
-      "icon": "Users",
+      "displayValue": "Votes",
+      "shortDesc": "Achieved block producer status by the community",
+      "icon": "ThumbsUp",
       "color": "text-blue-600 dark:text-blue-400",
       "bgColor": "bg-blue-50 dark:bg-blue-950/20"
-    },
-    {
-      "displayValue": "50+",
-      "shortDesc": "charitable organizations supported",
-      "icon": "Target",
-      "color": "text-purple-600 dark:text-purple-400",
-      "bgColor": "bg-purple-50 dark:bg-purple-950/20"
-    },
-    {
-      "displayValue": "1000+",
-      "shortDesc": "digital goods sold for good",
-      "icon": "CheckCircle",
-      "color": "text-primary",
-      "bgColor": "bg-primary/10"
     }
   ]
 }

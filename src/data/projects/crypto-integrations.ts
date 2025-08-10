@@ -3,11 +3,8 @@ export const cryptoIntegrationsProject = {
   slug: "crypto-integrations",
   title: "Crypto Integrations Platform",
   description: "A comprehensive platform for managing cryptocurrency integrations and transactions.",
-  category: "Web Development",
+  category: "User flows",
   imageUrl: "/images/projects/crypto-integrations/hero.jpg",
-  technologies: ["React", "Node.js", "PostgreSQL", "Web3.js", "TypeScript"],
-  gallery: [
-    "/images/projects/crypto-integrations/gallery-1.jpg",
-    "/images/projects/crypto-integrations/gallery-2.jpg"
-  ]
+  technologies: ["Sketch", "Sidecar flows"],
+  gallery: []
 };

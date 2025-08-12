@@ -102,7 +102,7 @@ const ProjectDetail = () => {
       <section className="section">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <div className="aspect-[16/10] relative overflow-hidden rounded-2xl mb-8 animate-scale-in">
+            <div className="aspect-[4/3] relative overflow-hidden rounded-2xl mb-8 animate-scale-in">
               <img 
                 src={project.imageUrl} 
                 alt={project.title}

@@ -41,7 +41,7 @@
     --gradient-mesh: none;
     
     /* Geometric patterns */
-    --pattern-grid: url("data:image/svg+xml,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='10' cy='10' r='1' fill='%23000000' fill-opacity='0.2'/%3e%3c/svg%3e");
+    --pattern-grid: url("data:image/svg+xml,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='10' cy='10' r='1' fill='%23000000' fill-opacity='0.08'/%3e%3c/svg%3e");
   }
 
   .dark {
@@ -80,7 +80,7 @@
     --gradient-mesh: none;
     
     /* Geometric patterns */
-    --pattern-grid: url("data:image/svg+xml,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='10' cy='10' r='1' fill='%23ffffff' fill-opacity='0.2'/%3e%3c/svg%3e");
+    --pattern-grid: url("data:image/svg+xml,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='10' cy='10' r='1' fill='%23ffffff' fill-opacity='0.08'/%3e%3c/svg%3e");
   }
 }
 

@@ -1,6 +1,6 @@
-InterX is a blockchain supported web app, designed and developed to help big companies untangle the complexity and time consumption while processing intercompany transactions. 
+InterX is a blockchain supported web app, designed and developed to help big companies untangle the complexity and time consumption while processing intercompany transactions.
 
-This application was designed and developed with Grant Thornton's USA Innovation Department
+This application was designed and developed with Grant Thornton's USA Innovation Department
 
 ### Enterprise Challenges
 1. Help speed up the process time for intercompany transactions.

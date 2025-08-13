@@ -1,8 +1,8 @@
 export const cryptoIntegrationsProject = {
   id: "3",
   slug: "crypto-integrations",
-  title: "Crypto Integrations Platform",
-  description: "A comprehensive platform for managing cryptocurrency integrations and transactions.",
+  title: "UntanglingCrypto Integrations",
+  description: "TL;DR: Small sample of user flow problem-solving.",
   category: "User flows",
   imageUrl: "/images/projects/crypto-integrations/hero.jpg",
   technologies: ["Sketch", "Sidecar flows"],

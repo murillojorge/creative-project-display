@@ -2,8 +2,8 @@ export const digitalGoodsForGoodProject = {
   id: "4",
   slug: "digital-goods-for-good",
   title: "Digital Goods for Good",
-  description: "A marketplace connecting digital creators with charitable causes.",
-  category: "Social Impact",
+  description: "TL;DR: A hackathon winning concept connecting digital creators with charitable causes.",
+  category: "Hackathon",
   imageUrl: "/images/projects/digital-goods-for-good/hero.jpg",
   technologies: ["Figma","React", "Blockchain", "NFT", "Material UI"],
   gallery: [

@@ -84,7 +84,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
             <img
               src={images[currentIndex]}
               alt={`${projectTitle} - Gallery Image ${currentIndex + 1}`}
-              className="max-w-full max-h-full object-contain"
+              className="h-[calc(100vh-120px)] w-auto max-w-full object-contain"
             />
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -19,6 +19,11 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
   projectTitle
 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+  // Update currentIndex when initialIndex prop changes
+  useEffect(() => {
+    setCurrentIndex(initialIndex);
+  }, [initialIndex]);
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);

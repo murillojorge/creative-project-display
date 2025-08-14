@@ -6,5 +6,6 @@ export const cryptoIntegrationsProject = {
   category: "User flows",
   imageUrl: "/images/projects/crypto-integrations/hero.jpg",
   technologies: ["Sketch", "Sidecar flows"],
-  gallery: []
+  gallery: [],
+  published: false // Set to true to make this project visible
 };

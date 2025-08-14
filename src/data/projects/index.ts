@@ -14,6 +14,7 @@ export interface Project {
   imageUrl: string;
   technologies: string[];
   gallery: string[];
+  published: boolean; // Flag to determine if project should be displayed
 }
 
 export const projects: Project[] = [

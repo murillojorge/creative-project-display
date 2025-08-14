@@ -12,5 +12,6 @@ export const digitalGoodsForGoodProject = {
     "/images/projects/digital-goods-for-good/gallery-3.jpg",
     "/images/projects/digital-goods-for-good/gallery-4.jpg",
     "/images/projects/digital-goods-for-good/gallery-5.jpg"
-  ]
+  ],
+  published: true // Set to true to make this project visible
 };

@@ -9,5 +9,6 @@ export const polcoAccessibilityAuditProject = {
   gallery: [
     "/images/projects/polco-accessibility-audit/gallery-1.jpg",
     "/images/projects/polco-accessibility-audit/gallery-2.jpg"
-  ]
+  ],
+  published: false // Set to true to make this project visible
 };

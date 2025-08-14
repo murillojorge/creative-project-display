@@ -9,5 +9,6 @@ export const chatbotAdaptiveCardsProject = {
   gallery: [
     "/images/projects/chatbot-adaptive-cards/gallery-1.jpg",
     "/images/projects/chatbot-adaptive-cards/gallery-2.jpg"
-  ]
+  ],
+  published: false // Set to true to make this project visible
 };

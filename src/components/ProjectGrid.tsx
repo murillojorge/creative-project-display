@@ -1,50 +1,9 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { projects } from '@/data/projects';
 
-// Sample project data
-const projects = [{
-  id: 1,
-  slug: "chatbot-adaptive-cards",
-  title: "Chatbot with Adaptive Cards",
-  description: "A POC on how to present data on chatbots with the help of adaptive cards.",
-  category: "AI Experiment",
-  imageUrl: "/images/projects/chatbot-adaptive-cards/hero.jpg"
-}, {
-  id: 2,
-  slug: "ai-cloud-research-redesign",
-  title: "AI Cloud Redesign",
-  description: "Redesign aimed to improve the user experience and expand the platform's capabilities.",
-  category: "UI/UX Design",
-  imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg"
-}, {
-  id: 3,
-  slug: "intercompany-transactions",
-  title: "Intercompany Transactions Made Easy",
-  description: "End-to-end user experience and design for intercompany transactions based on blockchain technology.",
-  category: "UI/UX Design",
-  imageUrl: "/images/projects/intercompany-transactions/hero.jpg"
-}, {
-  id: 4,
-  slug: "polco-accessibility-audit",
-  title: "Polco.us Accessibility Audit",
-  description: "Quick review of the accessibility audit consultation for a US-based research platform.",
-  category: "Accessibility",
-  imageUrl: "/images/projects/polco-accessibility-audit/hero.jpg"
-}, {
-  id: 5,
-  slug: "digital-goods-for-good",
-  title: "Digital Goods for Good",
-  description: "A hackathon winning concept built to attract new users and add good-will value to NFTs",
-  category: "Hackathon",
-  imageUrl: "/images/projects/digital-goods-for-good/hero.jpg"
-}, {
-  id: 6,
-  slug: "crypto-integrations",
-  title: "Untangling Crypto Integrations",
-  description: "Simplifying user flows for a crypto payments project.",
-  category: "User Flows",
-  imageUrl: "/images/projects/crypto-integrations/hero.jpg"
-}];
+// Filter projects to only show published ones
+const publishedProjects = projects.filter(project => project.published);
 
 const ProjectGrid = () => {
   return <section id="projects" className="section py-20">
@@ -58,7 +17,7 @@ const ProjectGrid = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {projects.map((project, index) => <ProjectCard key={project.id} title={project.title} description={project.description} category={project.category} imageUrl={project.imageUrl} index={index} slug={project.slug} />)}
+          {publishedProjects.map((project, index) => <ProjectCard key={project.id} title={project.title} description={project.description} category={project.category} imageUrl={project.imageUrl} index={index} slug={project.slug} />)}
         </div>
       </div>
     </section>;

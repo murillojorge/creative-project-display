@@ -33,10 +33,13 @@ const ProjectDetail = () => {
     }
   }, [slug]);
   
+  // Filter projects to only show published ones
+  const publishedProjects = projects.filter(project => project.published);
+  
   const project = projects.find(p => p.slug === slug);
-  const currentIndex = projects.findIndex(p => p.slug === slug);
-  const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
-  const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+  const currentIndex = publishedProjects.findIndex(p => p.slug === slug);
+  const prevProject = currentIndex > 0 ? publishedProjects[currentIndex - 1] : null;
+  const nextProject = currentIndex < publishedProjects.length - 1 ? publishedProjects[currentIndex + 1] : null;
 
   const handleBackToPortfolio = () => {
     navigate('/');

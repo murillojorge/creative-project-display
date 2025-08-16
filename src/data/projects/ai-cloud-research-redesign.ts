@@ -9,7 +9,9 @@ export const aiCloudResearchRedesignProject = {
   gallery: [
     "/images/projects/ai-cloud-research-redesign/gallery-1.jpg",
     "/images/projects/ai-cloud-research-redesign/gallery-2.jpg",
-    "/images/projects/ai-cloud-research-redesign/gallery-3.jpg"
+    "/images/projects/ai-cloud-research-redesign/gallery-3.jpg",
+    "/images/projects/ai-cloud-research-redesign/gallery-4.jpg",
+    "/images/projects/ai-cloud-research-redesign/gallery-5.jpg"
   ],
   published: true // Set to true to make this project visible
 };

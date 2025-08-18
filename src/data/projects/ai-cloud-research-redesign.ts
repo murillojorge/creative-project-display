@@ -17,7 +17,7 @@ export const aiCloudResearchRedesignProject = {
   video: {
     url: "https://youtu.be/_7R36yvd2K0", // Replace with your actual YouTube video URL
     title: "AI Cloud Homepage Redesign",
-    description: "Showcase of the new AI Cloud homepage.",
+    description: "As part of the AI Cloud Research Redesign project, I was responsible for creating a user-friendly homepage that showcased the platform's capabilities and features.",
     type: "youtube"
   },
   published: true // Set to true to make this project visible

@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import Contact from './Contact';
 import { GalleryModal } from './GalleryModal';
 import Outcomes from './Outcomes';
+import MediaSection from './MediaSection';
 import ReactMarkdown from 'react-markdown';
 import { projects } from '@/data/projects';
 import { loadAllProjectContent } from '@/utils/contentLoader';
@@ -160,6 +161,11 @@ const ProjectDetail = () => {
             </div>
           </div>
         </section>
+      )}
+
+      {/* Media Section */}
+      {(project.video || project.iframe) && (
+        <MediaSection video={project.video} iframe={project.iframe} />
       )}
 
       {/* Project Details */}

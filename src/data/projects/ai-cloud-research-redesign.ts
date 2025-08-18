@@ -15,7 +15,7 @@ export const aiCloudResearchRedesignProject = {
   ],
   // Video demo of the redesign
   video: {
-    url: "https://youtu.be/XAiyhwEI46Y", // Replace with your actual YouTube video URL
+    url: "https://youtu.be/_7R36yvd2K0", // Replace with your actual YouTube video URL
     title: "AI Cloud Homepage Redesign",
     description: "Showcase of the new AI Cloud homepage.",
     type: "youtube"

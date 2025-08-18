@@ -13,20 +13,6 @@
       "icon": "Users",
       "color": "text-blue-600 dark:text-blue-400",
       "bgColor": "bg-blue-50 dark:bg-blue-950/20"
-    },
-    {
-      "displayValue": "95%",
-      "shortDesc": "reduction in accessibility barriers",
-      "icon": "TrendingUp",
-      "color": "text-green-600 dark:text-green-400",
-      "bgColor": "bg-green-50 dark:bg-green-950/20"
-    },
-    {
-      "displayValue": "100%",
-      "shortDesc": "keyboard navigation coverage",
-      "icon": "Smartphone",
-      "color": "text-orange-600 dark:text-orange-400",
-      "bgColor": "bg-orange-50 dark:bg-orange-950/20"
     }
   ]
 }

@@ -8,7 +8,8 @@ export const polcoAccessibilityAuditProject = {
   technologies: ["Figma", "React", "ARIA", "WCAG 2.1"],
   gallery: [
     "/images/projects/polco-accessibility-audit/gallery-1.jpg",
-    "/images/projects/polco-accessibility-audit/gallery-2.jpg"
+    "/images/projects/polco-accessibility-audit/gallery-2.jpg",
+    "/images/projects/polco-accessibility-audit/gallery-3.jpg"
   ],
-  published: false // Set to true to make this project visible
+  published: true // Set to true to make this project visible
 };

@@ -15,10 +15,10 @@ export const aiCloudResearchRedesignProject = {
   ],
   // Video demo of the redesign
   video: {
-    url: "/videos/ai-cloud-research-redesign/aicloud-hero-01.mp4", // Local MP4 file
+    url: "https://youtu.be/XAiyhwEI46Y", // Replace with your actual YouTube video URL
     title: "AI Cloud Homepage Redesign",
     description: "Showcase of the new AI Cloud homepage.",
-    type: "mp4"
+    type: "youtube"
   },
   published: true // Set to true to make this project visible
 };

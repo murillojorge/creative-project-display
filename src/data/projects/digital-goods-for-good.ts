@@ -15,7 +15,7 @@ export const digitalGoodsForGoodProject = {
   ],
   // Interactive prototype iframe
   iframe: {
-    url: "https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fy7WiHHBXtvFULGoMoTOKRn%2FgGoods---Material-UI%3Fpage-id%3D60015%253A0%26node-id%3D60016%253A0%26viewport%3D241%252C48%252C0.98%26scaling%3Dscale-down%26starting-point-node-id%3D60016%253A0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox",
+    url: "https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fy7WiHHBXtvFULGoMoTOKRn%2FgGoods---Material-UI%3Fpage-id%3D60015%253A0%26node-id%3D60016%253A0%26viewport%3D241%252C48%252C0.98%26scaling%3Dscale-down%26starting-point-node-id%3D60016%253A0",
     title: "Interactive Prototype",
     description: "Explore the Digital Goods for Good platform prototype. This interactive demo showcases the user journey from discovering digital goods to completing a purchase that benefits charitable causes.",
     height: "450px"

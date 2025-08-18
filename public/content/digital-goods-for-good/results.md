@@ -1,0 +1,1 @@
+The success of this concept relied on the implementation of solutions for multiple UX pitfalls that plague blockchain apps, and that generally act as barriers to bring new users.

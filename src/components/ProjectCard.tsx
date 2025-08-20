@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <Link 
       to={`/project/${slug}`}
       className={cn(
-        "project-card animate-fade-in group block w-full md:w-[calc(33.333%-1rem)]",
+        "project-card animate-fade-in group block w-full md:w-[calc(33.333%-1.33rem)]",
         index > 0 && `[animation-delay:${index * 100}ms]`
       )}
     >

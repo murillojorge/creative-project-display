@@ -10,9 +10,9 @@ import { Project } from '../../types/project';
 export const projects: Project[] = [
   chatbotAdaptiveCardsProject,
   aiCloudResearchRedesignProject,
-  cryptoIntegrationsProject,
-  digitalGoodsForGoodProject,
   intercompanyTransactionsProject,
+  digitalGoodsForGoodProject,
+  cryptoIntegrationsProject,
   polcoAccessibilityAuditProject,
   eosioDashboardProject
 ];

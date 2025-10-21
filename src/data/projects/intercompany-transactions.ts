@@ -2,7 +2,7 @@ export const intercompanyTransactionsProject = {
   id: "5",
   slug: "intercompany-transactions",
   title: "Intercompany Transactions Made Easy",
-  description: "TL;DR: A blockchain based experimental app to solve intercompany transactions complexities.",
+  description: "A blockchain based experimental app to solve intercompany transactions complexities.",
   category: "UX/UI Design",
   imageUrl: "/images/projects/intercompany-transactions/hero.jpg",
   technologies: ["Blockchain", "React", "Material UI", "Sketch", "Figma", "Zeplin"],

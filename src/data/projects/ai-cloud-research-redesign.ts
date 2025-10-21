@@ -2,7 +2,7 @@ export const aiCloudResearchRedesignProject = {
   id: "2",
   slug: "ai-cloud-research-redesign",
   title: "AI Cloud Research Redesign",
-  description: "TL;DR: Redesign aimed to improve the user experience and expand the platform's capabilities.",
+  description: "Redesign aimed to improve the user experience and expand the platform's capabilities.",
   category: "UI/UX Design",
   imageUrl: "/images/projects/ai-cloud-research-redesign/hero.jpg",
   technologies: ["Figma", "React", "Bootstrap", "Spark Island Design System"],

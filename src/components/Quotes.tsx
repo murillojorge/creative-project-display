@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react';
 
 const quotes = [
   {
-    text: "He's a natural leader and a strong collaborator who effectively aligned stakeholders and engineering teams on a shared user-centric vision.Jorge's strategic approach and dedication to quality make him a valuable asset to any team.",
+    text: "He's a natural leader and a strong collaborator who effectively aligned stakeholders and engineering teams on a shared user-centric vision. Jorge's strategic approach and dedication to quality make him a valuable asset to any team.",
     author: "Daniel Delgado",
     role: "Senior Engineering Manager",
     company: "Intel"

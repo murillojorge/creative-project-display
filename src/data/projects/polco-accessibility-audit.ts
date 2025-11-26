@@ -5,7 +5,7 @@ export const polcoAccessibilityAuditProject = {
   description: "Accessibility audit and improvements for the Polco civic engagement platform.",
   category: "Accessibility",
   imageUrl: "/images/projects/polco-accessibility-audit/hero.jpg",
-  technologies: ["Figma", "React", "ARIA", "WCAG 2.1"],
+  technologies: ["Figma", "React", "ARIA", "WCAG 2.1", "ADA"],
   gallery: [
     "/images/projects/polco-accessibility-audit/gallery-1.jpg",
     "/images/projects/polco-accessibility-audit/gallery-2.jpg",

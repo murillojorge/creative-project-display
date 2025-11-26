@@ -2,7 +2,7 @@
   "outcomes": [
     {
       "displayValue": "100%",
-      "shortDesc": "WCAG 2.1 AA compliance",
+      "shortDesc": "WCAG 2.1 AA and ADA compliance",
       "icon": "Shield",
       "color": "text-emerald-600 dark:text-emerald-400",
       "bgColor": "bg-emerald-50 dark:bg-emerald-950/20"

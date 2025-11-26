@@ -38,18 +38,20 @@ const Quotes = () => {
                 className={`group animate-fade-in [animation-delay:${200 + index * 150}ms]`}
               >
                 <div className="relative p-6 rounded-lg bg-card border border-border/50 hover:border-border transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                  <Quote className="w-5 h-5 text-primary mb-4 opacity-60" />
+                  <Quote className="w-5 h-5 text-primary mb-4 opacity-60" aria-hidden="true" />
                   
-                  <blockquote className="text-foreground/80 leading-relaxed mb-6 italic">
-                    "{quote.text}"
-                  </blockquote>
-                  
-                  <div className="border-t border-border/30 pt-4">
-                    <p className="font-medium text-foreground">{quote.author}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {quote.role} at {quote.company}
-                    </p>
-                  </div>
+                  <figure>
+                    <blockquote className="text-foreground/80 leading-relaxed mb-6 italic">
+                      "{quote.text}"
+                    </blockquote>
+                    
+                    <figcaption className="border-t border-border/30 pt-4">
+                      <p className="font-medium text-foreground">{quote.author}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {quote.role} at {quote.company}
+                      </p>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             ))}

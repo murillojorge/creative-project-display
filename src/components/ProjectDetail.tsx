@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import Navbar from './Navbar';
 import Contact from './Contact';
 import { GalleryModal } from './GalleryModal';
 import Outcomes from './Outcomes';
@@ -74,6 +75,8 @@ const ProjectDetail = () => {
 
   return (
     <div className="min-h-screen bg-pattern-grid">
+      <Navbar />
+      <main id="main-content">
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b">
         <div className="container-width py-4">
@@ -145,7 +148,7 @@ const ProjectDetail = () => {
                   >
                     <img 
                       src={image} 
-                      alt="React"
+                      alt={`${project.title} gallery image ${index + 1}`}
                       className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
@@ -294,6 +297,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </section>
+      </main>
     </div>
   );
 };

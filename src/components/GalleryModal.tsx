@@ -52,6 +52,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
             size="icon"
             onClick={onClose}
             className="absolute top-4 right-4 z-50 text-white hover:bg-white/20"
+            aria-label="Close gallery"
           >
             <X className="w-6 h-6" />
           </Button>
@@ -69,6 +70,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
                 size="icon"
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-white hover:bg-white/20"
+                aria-label="Previous image"
               >
                 <ChevronLeft className="w-8 h-8" />
               </Button>
@@ -78,6 +80,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
                 size="icon"
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-white hover:bg-white/20"
+                aria-label="Next image"
               >
                 <ChevronRight className="w-8 h-8" />
               </Button>
@@ -105,6 +108,8 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
                       ? 'border-white scale-110' 
                       : 'border-white/30 hover:border-white/60'
                   }`}
+                  aria-label={`View image ${index + 1} of ${images.length}`}
+                  aria-current={index === currentIndex ? 'true' : 'false'}
                 >
                   <img
                     src={image}

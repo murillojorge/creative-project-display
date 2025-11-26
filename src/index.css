@@ -98,6 +98,19 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
+  /* Focus indicators for accessibility */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  [role="button"]:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+  
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-normal tracking-tight;
   }
@@ -130,6 +143,12 @@
   
   .nav-link:hover::after {
     @apply w-full;
+  }
+  
+  .nav-link:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 4px;
+    border-radius: 4px;
   }
   
   .project-card {

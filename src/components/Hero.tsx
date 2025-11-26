@@ -7,7 +7,7 @@ const Hero = () => {
             <h1 className="mt-4 font-medium leading-tight tracking-tighter px-[16px]">Designer / Technologist <br/>/ Doer</h1>
           </div>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">Helping build the Internet since 1998.</p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">Helping build the Web since 1998.</p>
           
           <div className="pt-4 animate-fade-in [animation-delay:400ms]">
             <a href="#projects" className="inline-flex items-center px-6 py-3 rounded-full bg-primary text-primary-foreground transition-all hover:bg-primary/90">

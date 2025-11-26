@@ -43,8 +43,12 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-medium mb-2">Social</h3>
               <div className="flex justify-center space-x-4 text-muted-foreground">
-                <a href="https://www.linkedin.com/in/jmurilloux/" target="_blank" className="hover:text-foreground transition-colors">LinkedIn</a>
-                <a href="https://www.behance.net/murillojorge" target="_blank" className="hover:text-foreground transition-colors">Behance</a>
+                <a href="https://www.linkedin.com/in/jmurilloux/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  LinkedIn<span className="sr-only"> (opens in new tab)</span>
+                </a>
+                <a href="https://www.behance.net/murillojorge" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Behance<span className="sr-only"> (opens in new tab)</span>
+                </a>
               </div>
             </div>
           </div>

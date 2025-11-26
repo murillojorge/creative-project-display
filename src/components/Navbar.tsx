@@ -19,13 +19,22 @@ const Navbar = () => {
   }, [scrolled]);
   
   return (
-    <header 
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out px-6 py-4",
-        scrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent"
-      )}
-    >
-      <div className="container-width flex items-center justify-between">
+    <>
+      {/* Skip to main content link */}
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+      >
+        Skip to main content
+      </a>
+      
+      <header 
+        className={cn(
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out px-6 py-4",
+          scrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        )}
+      >
+        <div className="container-width flex items-center justify-between">
         <a href="#" className="text-xl font-medium tracking-tight">
           <span className="sr-only">Designer Portfolio</span>
           <span className="text-primary">J.Murillo</span>
@@ -91,7 +100,8 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </header>
+      </header>
+    </>
   );
 };
 

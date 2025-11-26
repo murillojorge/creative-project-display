@@ -13,11 +13,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-pattern-grid">
       <Navbar />
-      <Hero />
-      <ProjectGrid />
-      <About />
-      <Quotes />
-      <Contact />
+      <main id="main-content">
+        <Hero />
+        <ProjectGrid />
+        <About />
+        <Quotes />
+        <Contact />
+      </main>
       <div className="py-8 text-center">
         <p className="text-sm text-muted-foreground">
           © {currentYear} Portfolio. All rights reserved.

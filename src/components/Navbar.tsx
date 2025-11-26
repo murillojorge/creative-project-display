@@ -40,7 +40,7 @@ const Navbar = () => {
           <span className="text-primary">J.Murillo</span>
         </a>
         
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
           <a href="#projects" className="nav-link">Portfolio</a>
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>

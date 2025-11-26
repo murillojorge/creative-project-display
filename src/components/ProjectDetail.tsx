@@ -65,7 +65,7 @@ const ProjectDetail = () => {
         <div className="text-center">
           <h1 className="text-2xl font-medium mb-4">Project Not Found</h1>
           <Button onClick={handleBackToPortfolio}>
-            <ArrowLeft className="w-4 h-4 mr-2" />
+            <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" />
             Back to Portfolio
           </Button>
         </div>
@@ -78,25 +78,25 @@ const ProjectDetail = () => {
       <Navbar />
       <main id="main-content">
       {/* Navigation Bar */}
-      <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b">
+      <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b" aria-label="Project navigation">
         <div className="container-width py-4">
           <div className="flex items-center justify-between">
             <Button variant="ghost" onClick={handleBackToPortfolio} className="gap-2">
-              <ArrowLeft className="w-4 h-4" />
+              <ArrowLeft className="w-4 h-4" aria-hidden="true" />
               Back to Portfolio
             </Button>
             <div className="flex items-center gap-4">
               {prevProject && (
                 <Button variant="ghost" size="sm" asChild>
                   <Link to={`/project/${prevProject.slug}`}>
-                    <ChevronLeft className="w-4 h-4" />
+                    <ChevronLeft className="w-4 h-4" aria-hidden="true" />
                   </Link>
                 </Button>
               )}
               {nextProject && (
                 <Button variant="ghost" size="sm" asChild>
                   <Link to={`/project/${nextProject.slug}`}>
-                    <ChevronRight className="w-4 h-4" />
+                    <ChevronRight className="w-4 h-4" aria-hidden="true" />
                   </Link>
                 </Button>
               )}
@@ -153,7 +153,7 @@ const ProjectDetail = () => {
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                       <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                         </svg>
                       </div>
@@ -178,7 +178,8 @@ const ProjectDetail = () => {
             {/* Main Content */}
             <div className="md:col-span-2 space-y-12">
               {loading ? (
-                <div className="space-y-8">
+                <div className="space-y-8" aria-busy="true" aria-live="polite">
+                  <span className="sr-only">Loading project content...</span>
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="animate-pulse">
                       <div className="h-6 bg-muted rounded w-24 mb-4"></div>

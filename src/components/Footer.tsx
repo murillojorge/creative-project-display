@@ -12,7 +12,7 @@ const Footer = () => {
             © {currentYear} JMurillo Portfolio. All rights reserved.
           </p>
           
-          <div className="flex space-x-8">
+          <nav className="flex space-x-8" aria-label="Footer navigation">
             <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Projects
             </a>
@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
-          </div>
+          </nav>
         </div>
       </div>
     </footer>

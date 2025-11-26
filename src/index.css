@@ -20,7 +20,7 @@
     --secondary-foreground: 0 0% 20%;
     
     --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 35%;
+    --muted-foreground: 0 0% 45%;
     
     --accent: 0 0% 75%;
     --accent-foreground: 0 0% 10%;
@@ -238,5 +238,19 @@
   
   .prose em {
     @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Reduced motion support for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

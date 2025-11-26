@@ -75,11 +75,16 @@ const Navbar = () => {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div id="mobile-menu" className="md:hidden absolute top-full left-0 right-0 bg-background border-t shadow-lg animate-fade-in duration-300">
-          <div className="container-width py-4 flex flex-col space-y-4">
+          <nav 
+            className="container-width py-4 flex flex-col space-y-4"
+            role="menu"
+            aria-label="Mobile navigation"
+          >
             <a 
               href="#projects" 
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
+              role="menuitem"
             >
               Portfolio
             </a>
@@ -87,6 +92,7 @@ const Navbar = () => {
               href="#about" 
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
+              role="menuitem"
             >
               About
             </a>
@@ -94,10 +100,11 @@ const Navbar = () => {
               href="#contact" 
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
+              role="menuitem"
             >
               Contact
             </a>
-          </div>
+          </nav>
         </div>
       )}
       </header>

@@ -41,9 +41,10 @@ const Navbar = () => {
         </a>
         
         <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
-          <a href="#projects" className="nav-link">Portfolio</a>
-          <a href="#about" className="nav-link">About</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <a href="/#projects" className="nav-link">Portfolio</a>
+          <a href="/services" className="nav-link">Services</a>
+          <a href="/#about" className="nav-link">About</a>
+          <a href="/#contact" className="nav-link">Contact</a>
           <ThemeToggle />
         </nav>
         
@@ -81,7 +82,7 @@ const Navbar = () => {
             aria-label="Mobile navigation"
           >
             <a 
-              href="#projects" 
+              href="/#projects" 
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
               role="menuitem"
@@ -89,7 +90,15 @@ const Navbar = () => {
               Portfolio
             </a>
             <a 
-              href="#about" 
+              href="/services" 
+              className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
+              onClick={() => setMobileMenuOpen(false)}
+              role="menuitem"
+            >
+              Services
+            </a>
+            <a 
+              href="/#about" 
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
               role="menuitem"
@@ -97,7 +106,7 @@ const Navbar = () => {
               About
             </a>
             <a 
-              href="#contact" 
+              href="/#contact" 
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
               role="menuitem"

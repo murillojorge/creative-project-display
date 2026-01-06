@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import Navbar from './Navbar';
 import Contact from './Contact';
 import { GalleryModal } from './GalleryModal';
-import Outcomes from './Outcomes';
+import Results from './Results';
 import MediaSection from './MediaSection';
 import ReactMarkdown from 'react-markdown';
 import { projects } from '@/data/projects';
@@ -123,10 +123,10 @@ const ProjectDetail = () => {
               <p className="text-xl text-muted-foreground max-w-2xl">{project.description}</p>
             </div>
 
-            {/* Key Outcomes */}
-            {!loading && content.outcomes && (
+            {/* Key Results */}
+            {!loading && content.keyResults && (
               <div className="animate-fade-in [animation-delay:300ms]">
-                <Outcomes content={content.outcomes} />
+                <Results content={content.keyResults} />
               </div>
             )}
           </div>

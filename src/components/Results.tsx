@@ -10,7 +10,7 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-interface OutcomeData {
+interface ResultData {
   value: string;
   displayValue: string;
   shortDesc: string;
@@ -22,12 +22,12 @@ interface OutcomeData {
   metric: string;
 }
 
-interface OutcomesData {
-  outcomes: OutcomeData[] | string[];
+interface ResultsData {
+  results: ResultData[] | string[];
 }
 
-interface OutcomesProps {
-  content: OutcomesData | string;
+interface ResultsProps {
+  content: ResultsData | string;
 }
 
 // Icon mapping
@@ -170,24 +170,24 @@ const parseDisplayMetric = (outcome: string) => {
   };
 };
 
-const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: number }) => {
+const MetricItem = ({ result, index }: { result: ResultData | string, index: number }) => {
   let metric: { displayValue: string; shortDesc: string };
   let context: { icon: string; color: string; bgColor: string };
   
-  if (typeof outcome === 'string') {
+  if (typeof result === 'string') {
     // Legacy format - parse from string
-    metric = parseDisplayMetric(outcome);
-    context = getMetricContext(outcome);
+    metric = parseDisplayMetric(result);
+    context = getMetricContext(result);
   } else {
     // New format - use structured data
     metric = {
-      displayValue: outcome.displayValue,
-      shortDesc: outcome.shortDesc
+      displayValue: result.displayValue,
+      shortDesc: result.shortDesc
     };
     context = {
-      icon: outcome.icon,
-      color: outcome.color,
-      bgColor: outcome.bgColor
+      icon: result.icon,
+      color: result.color,
+      bgColor: result.bgColor
     };
   }
   
@@ -209,40 +209,40 @@ const MetricItem = ({ outcome, index }: { outcome: OutcomeData | string, index: 
   );
 };
 
-const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
+const Results: React.FC<ResultsProps> = ({ content }) => {
   if (!content) return null;
   
-  let outcomes: (OutcomeData | string)[] = [];
+  let results: (ResultData | string)[] = [];
   
   if (typeof content === 'string') {
     // Legacy string format
-    outcomes = content
+    results = content
       .split('\n')
       .map(line => line.trim())
       .filter(line => line.length > 0);
-  } else if (content.outcomes) {
+  } else if (content.results) {
     // New structured format
-    outcomes = content.outcomes;
+    results = content.results;
   }
 
-  if (outcomes.length === 0) {
+  if (results.length === 0) {
     return null;
   }
 
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-2xl font-medium mb-2">Key Outcomes</h2>
+        <h2 className="text-2xl font-medium mb-2">Key Results</h2>
         <p className="text-sm text-muted-foreground">
           Measurable impact and results achieved through this project
         </p>
       </div>
       
       <div className="flex flex-wrap">
-        {outcomes.map((outcome, index) => (
+        {results.map((result, index) => (
           <MetricItem
             key={index}
-            outcome={outcome}
+            result={result}
             index={index}
           />
         ))}
@@ -251,4 +251,4 @@ const Outcomes: React.FC<OutcomesProps> = ({ content }) => {
   );
 };
 
-export default Outcomes;
+export default Results;

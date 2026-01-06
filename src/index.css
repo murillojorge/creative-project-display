@@ -239,6 +239,11 @@
   .prose em {
     @apply text-foreground;
   }
+  
+  /* Hero title utility for consistent large headings */
+  .hero-title {
+    @apply font-heading text-5xl sm:text-6xl lg:text-7xl font-medium leading-[0.95] tracking-tighter;
+  }
 }
 
 @layer utilities {

@@ -1,4 +1,4 @@
-// Content loader utility for loading markdown content and outcomes data
+// Content loader utility for loading markdown content and results data
 export const loadProjectContent = async (projectSlug: string, section: string): Promise<string> => {
   try {
     const response = await fetch(`/content/${projectSlug}/${section}.md`);
@@ -12,25 +12,30 @@ export const loadProjectContent = async (projectSlug: string, section: string): 
   }
 };
 
-export const loadProjectOutcomes = async (projectSlug: string): Promise<any> => {
+export const loadKeyResults = async (projectSlug: string): Promise<any> => {
   try {
-    // Try to load JSON outcomes first (new format)
-    const jsonResponse = await fetch(`/content/${projectSlug}/outcomes.json`);
+    // Try to load JSON results first (new format)
+    const jsonResponse = await fetch(`/content/${projectSlug}/results.json`);
     if (jsonResponse.ok) {
-      return await jsonResponse.json();
+      const data = await jsonResponse.json();
+      // Transform "outcomes" key to "results" if present (for backward compatibility)
+      if (data.outcomes) {
+        return { results: data.outcomes };
+      }
+      return data;
     }
     
     // Fallback to markdown format (old format)
-    const mdResponse = await fetch(`/content/${projectSlug}/outcomes.md`);
+    const mdResponse = await fetch(`/content/${projectSlug}/results.md`);
     if (mdResponse.ok) {
       const text = await mdResponse.text();
-      return { outcomes: text.split('\n').map(line => line.trim()).filter(line => line.length > 0) };
+      return { results: text.split('\n').map(line => line.trim()).filter(line => line.length > 0) };
     }
     
-    throw new Error(`Failed to load outcomes for ${projectSlug}`);
+    throw new Error(`Failed to load results for ${projectSlug}`);
   } catch (error) {
-    console.error(`Error loading outcomes:`, error);
-    return { outcomes: [] };
+    console.error(`Error loading results:`, error);
+    return { results: [] };
   }
 };
 
@@ -45,8 +50,8 @@ export const loadAllProjectContent = async (projectSlug: string) => {
     })
   );
   
-  // Load outcomes separately (could be JSON or markdown)
-  content.outcomes = await loadProjectOutcomes(projectSlug);
+  // Load key results separately (could be JSON or markdown)
+  content.keyResults = await loadKeyResults(projectSlug);
   
   return content;
 };

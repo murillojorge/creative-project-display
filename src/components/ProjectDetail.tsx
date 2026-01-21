@@ -88,14 +88,20 @@ const ProjectDetail = () => {
             <div className="flex items-center gap-4">
               {prevProject && (
                 <Button variant="ghost" size="sm" asChild>
-                  <Link to={`/project/${prevProject.slug}`}>
+                  <Link 
+                    to={`/project/${prevProject.slug}`}
+                    aria-label={`Go to previous project: ${prevProject.title}`}
+                  >
                     <ChevronLeft className="w-4 h-4" aria-hidden="true" />
                   </Link>
                 </Button>
               )}
               {nextProject && (
                 <Button variant="ghost" size="sm" asChild>
-                  <Link to={`/project/${nextProject.slug}`}>
+                  <Link 
+                    to={`/project/${nextProject.slug}`}
+                    aria-label={`Go to next project: ${nextProject.title}`}
+                  >
                     <ChevronRight className="w-4 h-4" aria-hidden="true" />
                   </Link>
                 </Button>
@@ -267,7 +273,11 @@ const ProjectDetail = () => {
             <div className="flex items-center justify-between py-8 border-t">
               {prevProject ? (
                 <Button variant="ghost" asChild className="flex-1 justify-start pl-1 h-auto py-3">
-                  <Link to={`/project/${prevProject.slug}`} className="flex items-center gap-3">
+                  <Link 
+                    to={`/project/${prevProject.slug}`} 
+                    className="flex items-center gap-3"
+                    aria-label={`Previous project: ${prevProject.title}`}
+                  >
                     <ChevronLeft className="w-5 h-5" />
                     <div className="text-left hidden sm:block">
                       <p className="text-sm text-muted-foreground">Previous</p>
@@ -282,7 +292,11 @@ const ProjectDetail = () => {
               
               {nextProject ? (
                 <Button variant="ghost" asChild className="flex-1 justify-end pr-1 h-auto py-3">
-                  <Link to={`/project/${nextProject.slug}`} className="flex items-center gap-3">
+                  <Link 
+                    to={`/project/${nextProject.slug}`} 
+                    className="flex items-center gap-3"
+                    aria-label={`Next project: ${nextProject.title}`}
+                  >
                     <div className="text-right hidden sm:block">
                       <p className="text-sm text-muted-foreground">Next</p>
                       <p className="font-medium">{nextProject.title}</p>

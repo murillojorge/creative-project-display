@@ -36,19 +36,19 @@ const About = () => {
             
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="space-y-1">
-                <h4 className="text-sm font-medium text-foreground">Design Tools</h4>
+                <h3 className="text-sm font-medium text-foreground">Design Tools</h3>
                 <p className="text-sm text-muted-foreground">Figma, Lovable, Protopie, Adobe Suite, Affinity</p>
               </div>
               <div className="space-y-1">
-                <h4 className="text-sm font-medium text-foreground">Methodology</h4>
+                <h3 className="text-sm font-medium text-foreground">Methodology</h3>
                 <p className="text-sm text-muted-foreground">Human-centered Design, Design Thinking, Lean UX, Agile</p>
               </div>
               <div className="space-y-1">
-                <h4 className="text-sm font-medium text-foreground">Advocacy</h4>
+                <h3 className="text-sm font-medium text-foreground">Advocacy</h3>
                 <p className="text-sm text-muted-foreground">Usability, Accessibility, Ethical AI</p>
               </div>
               <div className="space-y-1">
-                <h4 className="text-sm font-medium text-foreground">Collaboration</h4>
+                <h3 className="text-sm font-medium text-foreground">Collaboration</h3>
                 <p className="text-sm text-muted-foreground">Design Systems, Workshops, Mentoring, Open Source</p>
               </div>
             </div>

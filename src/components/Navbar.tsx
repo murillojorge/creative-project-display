@@ -69,11 +69,11 @@ const Navbar = ({ hideNavLinks = false }: NavbarProps) => {
           >
             Contact
           </a>
-          <ThemeToggle />
+          <ThemeToggle hidden={hideNavLinks} />
         </nav>
         
         <div className="md:hidden flex items-center space-x-2">
-          <ThemeToggle />
+          <ThemeToggle hidden={hideNavLinks} />
           <button 
             className="p-2" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

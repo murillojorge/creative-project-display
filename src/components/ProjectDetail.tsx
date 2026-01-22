@@ -75,7 +75,7 @@ const ProjectDetail = () => {
 
   return (
     <div className="min-h-screen bg-pattern-grid">
-      <Navbar />
+      <Navbar hideNavLinks />
       <main id="main-content">
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b" aria-label="Project navigation">

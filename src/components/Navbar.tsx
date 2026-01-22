@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import ThemeToggle from './ThemeToggle';
 
-const Navbar = () => {
+interface NavbarProps {
+  hideNavLinks?: boolean;
+}
+
+const Navbar = ({ hideNavLinks = false }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
@@ -41,9 +45,30 @@ const Navbar = () => {
         </a>
         
         <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
-          <a href="#projects" className="nav-link">Portfolio</a>
-          <a href="#about" className="nav-link">About</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <a 
+            href="#projects" 
+            className="nav-link"
+            tabIndex={hideNavLinks ? -1 : undefined}
+            aria-hidden={hideNavLinks || undefined}
+          >
+            Portfolio
+          </a>
+          <a 
+            href="#about" 
+            className="nav-link"
+            tabIndex={hideNavLinks ? -1 : undefined}
+            aria-hidden={hideNavLinks || undefined}
+          >
+            About
+          </a>
+          <a 
+            href="#contact" 
+            className="nav-link"
+            tabIndex={hideNavLinks ? -1 : undefined}
+            aria-hidden={hideNavLinks || undefined}
+          >
+            Contact
+          </a>
           <ThemeToggle />
         </nav>
         
@@ -85,6 +110,8 @@ const Navbar = () => {
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
               role="menuitem"
+              tabIndex={hideNavLinks ? -1 : undefined}
+              aria-hidden={hideNavLinks || undefined}
             >
               Portfolio
             </a>
@@ -93,6 +120,8 @@ const Navbar = () => {
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
               role="menuitem"
+              tabIndex={hideNavLinks ? -1 : undefined}
+              aria-hidden={hideNavLinks || undefined}
             >
               About
             </a>
@@ -101,6 +130,8 @@ const Navbar = () => {
               className="nav-link py-2 px-4 hover:bg-muted rounded-md" 
               onClick={() => setMobileMenuOpen(false)}
               role="menuitem"
+              tabIndex={hideNavLinks ? -1 : undefined}
+              aria-hidden={hideNavLinks || undefined}
             >
               Contact
             </a>
